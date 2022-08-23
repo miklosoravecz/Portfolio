@@ -1,0 +1,29 @@
+{
+	"env": {
+		"es6": true,
+		"node": true
+	},
+	"parserOptions": {
+		"ecmaVersion": "latest",
+		"sourceType": "module"
+	},
+	"plugins": ["@html-eslint"],
+	"overrides": [
+		{
+			"files": ["*.html"],
+			"parser": "@html-eslint/parser",
+			"extends": ["plugin:@html-eslint/recommended"]
+		}
+	],
+	"settings": {},
+	"extends": "eslint:recommended",
+	"rules": {
+		"semi": [2, "never"],
+		"indent": ["error", "tab"],
+		"no-multi-spaces": ["error", {"ignoreEOLComments": false}],
+		"eol-last": ["error", "always"]
+	},
+	"globals": {
+		"document": true
+	}
+}

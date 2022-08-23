@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w scss/ -o src/css/ --recursive"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "node-sass": "^7.0.1"
+  },
+  "devDependencies": {
+    "@html-eslint/eslint-plugin": "^0.13.2",
+    "@html-eslint/parser": "^0.13.2",
+    "eslint": "^8.2.0"
+  }
+}

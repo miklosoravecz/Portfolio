@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Averia+Gruesa+Libre&family=Dancing+Script:wght@500&family=IM+Fell+French+Canon+SC&family=Trocchi&display=swap");
+
+//basic colors
+$background-color: rgb(237, 246, 249);
+$primary-color: rgb(188, 197, 190);
+//$secondary-color: rgb(103, 162, 167);
+$secondary-color: linear-gradient(
+	90deg,
+	rgba(126, 195, 166, 0.908000700280112) 1%,
+	rgba(149, 152, 186, 1) 100%,
+	rgba(30, 1, 34, 1) 100%,
+	rgba(101, 68, 110, 1) 100%
+);
+
+$text-light: rgb(255, 255, 255);
+$text-dark: rgb(0, 0, 0);
+$background-opacity: 0.9;
+
+//fonts
+$header-title: "Anton", sans-serif;
+$header-subtitle: "Dancing Script", cursive;
+$p: "Trocchi", serif;
+$im-fell: "IM Fell French Canon SC", serif;
+
+//ease in
+@mixin easeIn {
+	transition: all 0.5s ease-in;
+}

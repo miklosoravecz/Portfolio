@@ -10,6 +10,6 @@
   "devDependencies": {
     "@html-eslint/eslint-plugin": "^0.13.2",
     "@html-eslint/parser": "^0.13.2",
-    "eslint": "^8.2.0"
+    "eslint": "^8.22.0"
   }
 }

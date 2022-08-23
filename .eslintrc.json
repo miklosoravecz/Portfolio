@@ -10,18 +10,24 @@
 	"plugins": ["@html-eslint"],
 	"overrides": [
 		{
-			"files": ["*.html"],
-			"parser": "@html-eslint/parser",
-			"extends": ["plugin:@html-eslint/recommended"]
+		  "files": ["*.html"],
+		  "parser": "@html-eslint/parser",
+		  "extends": ["plugin:@html-eslint/recommended"],
+		  "rules": {
+			"@html-eslint/no-multiple-h1": "off"
+		  }
 		}
-	],
+	  ],
 	"settings": {},
 	"extends": "eslint:recommended",
 	"rules": {
 		"semi": [2, "never"],
 		"indent": ["error", "tab"],
 		"no-multi-spaces": ["error", {"ignoreEOLComments": false}],
-		"eol-last": ["error", "always"]
+		"no-mixed-spaces-and-tabs": 1,
+		"eol-last": ["error", "always"],
+		"quotes": ["error", "single", {"avoidEscape": true}]
+		
 	},
 	"globals": {
 		"document": true

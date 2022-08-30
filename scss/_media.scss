@@ -10,6 +10,10 @@
 		display: flex;
 	}
 
+	.navbar-brand {
+		animation: menu-brand-downsize cubic-bezier(0.075, 0.82, 0.165, 1) 0.65s;
+	}
+
 	// header {
 	// 	align-items: center;
 	// 	justify-content: center;
@@ -112,6 +116,7 @@
 
 	.navbar-brand {
 		font-size: 2rem;
+		
 	}
 
 	.navbar-img {
@@ -126,6 +131,8 @@
 	.navbar-burger-menu {
 		display: none;
 	}
+
+	
 
 	// header {
 	// 	align-items: flex-start;
@@ -279,4 +286,15 @@
 	// .button {
 	// 	width: 13rem;
 	// }
+}
+@keyframes menu-brand-downsize {
+	from {
+		font-size: 2rem;
+		
+	}
+
+	to {
+		font-size: 1.5rem;
+		
+	}
 }

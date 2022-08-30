@@ -17,7 +17,7 @@ body {
 		flex-direction: row;
 		width: 100%;
 		height: 2.5rem;
-		// background-color: antiquewhite;
+		
 	}
 	
 	.navbar-brand {
@@ -29,12 +29,21 @@ body {
 		font-weight: bold;
 		color: $text-light;
 		margin-left: 8%;
+		animation: open-menu-rolldown cubic-bezier(0.075, 0.82, 0.165, 1) 0.65s;
+	}
+
+	.navbar-brand:hover {
+		color: $primary-color;
+	}
+
+	.navbar-brand:active {
+		transform: scale(1.1)
 	}
 
 	.navbar-img {
-		width: 24px;
-		height: 24px;
-		margin-right: 0.5rem;
+		width: 32px;
+		height: 29px;
+		margin-right: 0.1rem;
 	}
 
 	.navbar-burger-menu {
@@ -47,6 +56,7 @@ body {
 		justify-content: right;
 		width:100%;
 		margin-right: 8%;
+		animation: open-menu-rolldown cubic-bezier(0.075, 0.82, 0.165, 1) 0.65s;
 	}
 
 	.navbar-href {
@@ -55,17 +65,28 @@ body {
 		font-size: 2rem;
 		margin-left: 2rem;
 		color: $text-light;
+		transition: transform .1s linear;
 	}
 
-	.index-page {
+	.navbar-href:hover {
+		color: $primary-color;
+	}
 
-
-
-	
-
+	.navbar-href:active {
+		transform: scale(1.1)
 	}
 	
+	@keyframes open-menu-rolldown {
+		from {
+			margin-top: -200%;
+			
+		}
 	
+		to {
+			margin-top: 0%;
+			
+		}
+	}
 
 	// .page-container {
 	// 	display:flex;

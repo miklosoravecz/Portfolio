@@ -1,13 +1,13 @@
 //responsiveness
 
 @mixin mediaSmall {
-	@media screen and (max-width: 600px) {
+	@media screen and (max-width: 800px) {
 		@content;
 	}
 }
 
 @mixin mediaMedium {
-	@media screen and (min-width: 601px) and (max-width: 1280px) {
+	@media screen and (min-width: 801px) and (max-width: 1280px) {
 		@content;
 	}
 }

@@ -106,6 +106,19 @@
 
 @include mediaMedium {
 
+	.navbar {
+		height: 4rem;
+	}
+
+	.navbar-brand {
+		font-size: 2rem;
+	}
+
+	.navbar-img {
+		width: 36px;
+		height: 36px;
+	}
+
 	.navbar-open-menu {
 		display: flex;
 	}
@@ -190,6 +203,19 @@
 //large screen
 
 @include mediaLarge {
+
+	.navbar {
+		height: 4rem;
+	}
+
+	.navbar-brand {
+		font-size: 2rem;
+	}
+
+	.navbar-img {
+		width: 36px;
+		height: 36px;
+	}
 
 	.navbar-open-menu {
 		display: flex;

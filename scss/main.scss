@@ -9,14 +9,15 @@ body {
 	font-family: $primary-font;
 	background-color: $background-color;
 	margin: unset;
+}
 
 
 	.navbar {
 		display: flex;
 		flex-direction: row;
 		width: 100%;
-		height: 4rem;
-		background-color: antiquewhite;
+		height: 2.5rem;
+		// background-color: antiquewhite;
 	}
 	
 	.navbar-brand {
@@ -24,17 +25,16 @@ body {
 		flex-direction: row;
 		align-items: center;
 		justify-content: center;
-		font-size: 2rem;
-		font-style: normal;
-		margin-left: 1rem;
+		font-size: 1.5rem;
+		font-weight: bold;
+		color: $text-light;
+		margin-left: 8%;
 	}
 
 	.navbar-img {
-		height: 2rem;
-		width: 36px;
-		height: 36px;
+		width: 24px;
+		height: 24px;
 		margin-right: 0.5rem;
-
 	}
 
 	.navbar-burger-menu {
@@ -44,8 +44,17 @@ body {
 
 	.navbar-open-menu {
 		flex-direction: row;
+		justify-content: right;
+		width:100%;
+		margin-right: 8%;
+	}
+
+	.navbar-href {
+		display: flex;
 		align-items: center;
-		justify-content: space-between;
+		font-size: 2rem;
+		margin-left: 2rem;
+		color: $text-light;
 	}
 
 	.index-page {
@@ -275,6 +284,5 @@ body {
 	// .link-icon:hover {
 	// 	transform: translateY(-1px);
 	// }
-}
 
 @import "media";

@@ -7,6 +7,7 @@
 		"ecmaVersion": "latest",
 		"sourceType": "module"
 	},
+	
 	"plugins": ["@html-eslint"],
 	"overrides": [
 		{
@@ -14,21 +15,25 @@
 		  "parser": "@html-eslint/parser",
 		  "extends": ["plugin:@html-eslint/recommended"],
 		  "rules": {
-			"@html-eslint/no-multiple-h1": "off"
+			"@html-eslint/no-multiple-h1": "off",
+			"@html-eslint/no-multiple-empty-lines": ["error", { "max": 0}]
 		  }
+		},
+		{
+			"files":["*.js"],
+			"extends": "eslint:recommended",
+			"rules": {
+				"semi": [2, "never"],
+				"indent": ["error", "tab"],
+				"no-multi-spaces": ["error", {"ignoreEOLComments": false}],
+				"no-mixed-spaces-and-tabs": 1,
+				"eol-last": ["error", "always"],
+				"quotes": ["error", "single", {"avoidEscape": true}],
+				"no-multiple-empty-lines": [2, {"max": 1, "maxEOF": 0}]
+			}
 		}
 	  ],
 	"settings": {},
-	"extends": "eslint:recommended",
-	"rules": {
-		"semi": [2, "never"],
-		"indent": ["error", "tab"],
-		"no-multi-spaces": ["error", {"ignoreEOLComments": false}],
-		"no-mixed-spaces-and-tabs": 1,
-		"eol-last": ["error", "always"],
-		"quotes": ["error", "single", {"avoidEscape": true}]
-		
-	},
 	"globals": {
 		"document": true
 	}

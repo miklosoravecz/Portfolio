@@ -7,46 +7,72 @@ body {
   font-family: "Francois One", sans-serif;
   background-color: #1e1e1e;
   margin: unset; }
-  body .navbar {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 4rem;
-    background-color: antiquewhite; }
-  body .navbar-brand {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    font-style: normal;
-    margin-left: 1rem; }
-  body .navbar-img {
-    height: 2rem;
-    width: 36px;
-    height: 36px;
-    margin-right: 0.5rem; }
-  body .navbar-burger-menu {
-    flex-direction: column;
-    align-items: center; }
-  body .navbar-open-menu {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between; }
 
-@media screen and (max-width: 600px) {
+.navbar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 2.5rem; }
+
+.navbar-brand {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fefefe;
+  margin-left: 8%; }
+
+.navbar-img {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.5rem; }
+
+.navbar-burger-menu {
+  flex-direction: column;
+  align-items: center; }
+
+.navbar-open-menu {
+  flex-direction: row;
+  justify-content: right;
+  width: 100%;
+  margin-right: 8%; }
+
+.navbar-href {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  margin-left: 2rem;
+  color: #fefefe; }
+
+@media screen and (max-width: 800px) {
   .navbar-open-menu {
     display: none; }
   .navbar-burger-menu {
     display: flex; } }
 
-@media screen and (min-width: 601px) and (max-width: 1280px) {
+@media screen and (min-width: 801px) and (max-width: 1280px) {
+  .navbar {
+    height: 4rem; }
+  .navbar-brand {
+    font-size: 2rem; }
+  .navbar-img {
+    width: 36px;
+    height: 36px; }
   .navbar-open-menu {
     display: flex; }
   .navbar-burger-menu {
     display: none; } }
 
 @media screen and (min-width: 1281px) {
+  .navbar {
+    height: 4rem; }
+  .navbar-brand {
+    font-size: 2rem; }
+  .navbar-img {
+    width: 36px;
+    height: 36px; }
   .navbar-open-menu {
     display: flex; }
   .navbar-burger-menu {

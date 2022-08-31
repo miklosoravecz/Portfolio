@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
 
+:root {
+	a {
+		text-decoration:none; 
+	}
+}
+
 //basic colors
 $background-color: rgb(30, 30, 30);
-$primary-color: rgb(197, 192, 185);
+$primary-color: rgb(254, 254, 254);
 $secondary-color: rgb(255, 145, 75);
-$text-light: rgb(254, 254, 254);
-$text-dark: rgb(7, 7, 7);
+$darken-light:rgb(197, 192, 185);
+$primary-dark: rgb(7, 7, 7);
 $background-opacity: 0.9;
 
 //fonts

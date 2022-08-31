@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Francois+One&display=swap");
-a {
+:root a {
   text-decoration: none; }
 
 body {
@@ -26,7 +26,7 @@ body {
   animation: open-menu-rolldown cubic-bezier(0.075, 0.82, 0.165, 1) 0.65s; }
 
 .navbar-brand:hover {
-  color: #c5c0b9; }
+  color: #ff914b; }
 
 .navbar-brand:active {
   transform: scale(1.1); }
@@ -36,11 +36,7 @@ body {
   height: 29px;
   margin-right: 0.1rem; }
 
-.navbar-burger-menu {
-  flex-direction: column;
-  align-items: center; }
-
-.navbar-open-menu {
+.navbar-menu {
   flex-direction: row;
   justify-content: right;
   width: 100%;
@@ -56,10 +52,36 @@ body {
   transition: transform .1s linear; }
 
 .navbar-href:hover {
-  color: #c5c0b9; }
+  color: #ff914b; }
 
 .navbar-href:active {
   transform: scale(1.1); }
+
+.navbar-burger {
+  align-items: center;
+  justify-content: right;
+  width: 100%;
+  margin-right: 8%; }
+
+.navbar-burger-button {
+  background: none;
+  border: none;
+  width: 32px;
+  height: 29px;
+  cursor: pointer; }
+
+.navbar-burger-button:hover {
+  color: #ff914b; }
+
+.navbar-burger-button:active {
+  transform: scale(1.1); }
+
+.navbar-burger-bar {
+  width: 32px;
+  height: 7px;
+  margin-bottom: 3px;
+  background: #fefefe;
+  border-radius: 2px; }
 
 @keyframes open-menu-rolldown {
   from {
@@ -68,9 +90,9 @@ body {
     margin-top: 0%; } }
 
 @media screen and (max-width: 800px) {
-  .navbar-open-menu {
+  .navbar-menu {
     display: none; }
-  .navbar-burger-menu {
+  .navbar-burger {
     display: flex; }
   .navbar-brand {
     animation: menu-brand-downsize cubic-bezier(0.075, 0.82, 0.165, 1) 0.65s; } }
@@ -83,9 +105,9 @@ body {
   .navbar-img {
     width: 36px;
     height: 36px; }
-  .navbar-open-menu {
+  .navbar-menu {
     display: flex; }
-  .navbar-burger-menu {
+  .navbar-burger {
     display: none; } }
 
 @media screen and (min-width: 1281px) {
@@ -96,9 +118,9 @@ body {
   .navbar-img {
     width: 36px;
     height: 36px; }
-  .navbar-open-menu {
+  .navbar-menu {
     display: flex; }
-  .navbar-burger-menu {
+  .navbar-burger {
     display: none; } }
 
 @keyframes menu-brand-downsize {

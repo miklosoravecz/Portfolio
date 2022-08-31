@@ -2,11 +2,11 @@
 
 @include mediaSmall {
 
-	.navbar-open-menu {
+	.navbar-menu {
 		display: none;
 	}
 
-	.navbar-burger-menu {
+	.navbar-burger {
 		display: flex;
 	}
 
@@ -124,11 +124,11 @@
 		height: 36px;
 	}
 
-	.navbar-open-menu {
+	.navbar-menu {
 		display: flex;
 	}
 
-	.navbar-burger-menu {
+	.navbar-burger {
 		display: none;
 	}
 
@@ -224,11 +224,11 @@
 		height: 36px;
 	}
 
-	.navbar-open-menu {
+	.navbar-menu {
 		display: flex;
 	}
 
-	.navbar-burger-menu {
+	.navbar-burger {
 		display: none;
 	}
 

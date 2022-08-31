@@ -1,3 +1,4 @@
+const burgerButton = document.getElementById('burger-button')
 const button = document.getElementById('lang-button')
 const logoSubtitle = document.getElementById('logo-subtitle')
 const mainTitle = document.getElementById('main-title')

@@ -85,8 +85,8 @@ body {
   .navbar-burger-button.close {
     transform: rotate(180deg) scale(1.5); }
 
-.navbar-burger-button:hover {
-  color: #ff914b; }
+.navbar-burger-button:hover div {
+  background: #ff914b; }
 
 .navbar-burger-button:active {
   transform: scale(1.1); }

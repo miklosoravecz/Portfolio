@@ -21,3 +21,28 @@ $primary-font:'Francois One', sans-serif;
 @mixin easeIn {
 	transition: all 0.5s ease-in;
 }
+
+//animation keyframes
+@keyframes open-menu-rolldown {
+	from {
+		margin-top: -200%;
+		
+	}
+
+	to {
+		margin-top: 0%;
+		
+	}
+}
+
+@keyframes open-menu-rollup {
+	from {
+		margin-top: 0%;
+		
+	}
+
+	to {
+		margin-top: -200%;
+		
+	}
+}

@@ -2,6 +2,18 @@
 :root a {
   text-decoration: none; }
 
+@keyframes open-menu-rolldown {
+  from {
+    margin-top: -200%; }
+  to {
+    margin-top: 0%; } }
+
+@keyframes open-menu-rollup {
+  from {
+    margin-top: 0%; }
+  to {
+    margin-top: -200%; } }
+
 body {
   font-size: 1rem;
   font-family: "Francois One", sans-serif;
@@ -37,6 +49,7 @@ body {
   margin-right: 0.1rem; }
 
 .navbar-menu {
+  display: flex;
   flex-direction: row;
   justify-content: right;
   width: 100%;
@@ -66,7 +79,11 @@ body {
 .navbar-burger-button {
   background: none;
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+  margin-top: 7px;
+  transform: scale(1.5); }
+  .navbar-burger-button.close {
+    transform: rotate(180deg) scale(1.5); }
 
 .navbar-burger-button:hover {
   color: #ff914b; }
@@ -75,28 +92,38 @@ body {
   transform: scale(1.1); }
 
 .navbar-burger-bar {
-  width: 32px;
-  height: 7px;
-  margin-bottom: 3px;
+  position: relative;
+  width: 20px;
+  height: 3px;
+  margin-bottom: 4px;
   background: #fefefe;
   border-radius: 2px; }
-
-@keyframes open-menu-rolldown {
-  from {
-    margin-top: -200%; }
-  to {
-    margin-top: 0%; } }
+  .navbar-burger-bar.show {
+    transition: transform 650ms cubic-bezier(0.23, 1, 0.32, 1); }
+    .navbar-burger-bar.show:nth-child(1) {
+      top: 11px;
+      width: 23px;
+      transform: rotate(1125deg); }
+    .navbar-burger-bar.show:nth-child(2) {
+      opacity: 0; }
+    .navbar-burger-bar.show:nth-child(3) {
+      width: 23px;
+      bottom: 3px;
+      transform: rotate(1035deg); }
 
 @media screen and (max-width: 800px) {
   .navbar-menu {
-    display: none; }
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
+    height: 168px;
+    top: -200px;
+    -webkit-transition: top 0.65s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: top 0.65s cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation: none; }
     .navbar-menu.show {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      position: fixed;
       top: 57px; }
-  .menu-item.show {
+  .menu-item {
     width: 137px;
     margin-right: 8%;
     padding-right: 6px;
@@ -114,8 +141,6 @@ body {
   .navbar-img {
     width: 36px;
     height: 36px; }
-  .navbar-menu {
-    display: flex; }
   .navbar-burger {
     display: none; } }
 
@@ -127,8 +152,6 @@ body {
   .navbar-img {
     width: 36px;
     height: 36px; }
-  .navbar-menu {
-    display: flex; }
   .navbar-burger {
     display: none; } }
 

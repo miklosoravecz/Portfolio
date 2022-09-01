@@ -1,6 +1,7 @@
 const burgerButton = document.getElementById('burger-button')
 const navbarMenu = document.getElementById('navbar-menu')
 const menuItems = document.querySelectorAll('.menu-item')
+const burgerLines = document.querySelectorAll('.navbar-burger-bar')
 // const button = document.getElementById('lang-button')
 // const logoSubtitle = document.getElementById('logo-subtitle')
 // const mainTitle = document.getElementById('main-title')
@@ -24,12 +25,13 @@ function toggleMenu() {
 		burgerButton.classList.add('close')
 		navbarMenu.classList.add('show')
 		menuItems.forEach((item) => item.classList.add('show'))
-		console.log('mutteeer')
+		burgerLines.forEach((item) => item.classList.add('show'))
 		burgerMenuOpened = true
 	} else {
 		burgerButton.classList.remove('close')
 		navbarMenu.classList.remove('show')
 		menuItems.forEach((item) => item.classList.remove('show'))
+		burgerLines.forEach((item) => item.classList.remove('show'))
 		burgerMenuOpened = false
 	}
 }

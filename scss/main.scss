@@ -49,7 +49,7 @@ body {
 		animation: open-menu-rolldown cubic-bezier(0.075, 0.82, 0.165, 1) 0.65s;
 	}
 
-	.navbar-href {
+	.menu-item {
 		display: flex;
 		align-items: center;
 		font-size: 2rem;
@@ -58,26 +58,25 @@ body {
 		transition: transform .1s linear;
 	}
 
-	.navbar-href:hover {
+	.menu-item:hover {
 		color: $secondary-color;
 	}
 
-	.navbar-href:active {
+	.menu-item:active {
 		transform: scale(1.1)
 	}
 
 	.navbar-burger {
 		align-items: center;
 		justify-content: right;
-		width: 100%;
+		width:100%;
 		margin-right: 8%;
 	}
 
 	.navbar-burger-button {
 		background: none;
 		border: none;
-		width:32px;
-		height: 29px;
+		
 		cursor: pointer;
 
 	}

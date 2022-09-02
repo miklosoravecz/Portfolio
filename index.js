@@ -2,6 +2,7 @@ const burgerButton = document.getElementById('burger-button')
 const navbarMenu = document.getElementById('navbar-menu')
 const menuItems = document.querySelectorAll('.menu-item')
 const burgerLines = document.querySelectorAll('.navbar-burger-bar')
+const overlay = document.getElementById('banner-overlay')
 // const button = document.getElementById('lang-button')
 // const logoSubtitle = document.getElementById('logo-subtitle')
 // const mainTitle = document.getElementById('main-title')
@@ -20,16 +21,18 @@ const burgerLines = document.querySelectorAll('.navbar-burger-bar')
 let burgerMenuOpened = false
 // let isEnglish = false
 
-function toggleMenu() {
+const toggleMenu = () => {
 	if (!burgerMenuOpened) {
 		burgerButton.classList.add('close')
 		navbarMenu.classList.add('show')
+		overlay.classList.add('show')
 		menuItems.forEach((item) => item.classList.add('show'))
 		burgerLines.forEach((item) => item.classList.add('show'))
 		burgerMenuOpened = true
 	} else {
 		burgerButton.classList.remove('close')
 		navbarMenu.classList.remove('show')
+		overlay.classList.remove('show')
 		menuItems.forEach((item) => item.classList.remove('show'))
 		burgerLines.forEach((item) => item.classList.remove('show'))
 		burgerMenuOpened = false

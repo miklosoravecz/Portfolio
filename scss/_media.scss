@@ -32,8 +32,23 @@
 		animation: menu-brand-downsize cubic-bezier(0.075, 0.82, 0.165, 1) 0.65s;
 	}
 
+	.banner-overlay {
+		top: -100vh;
+		-webkit-transition: top 0.65s cubic-bezier(0.075, 0.82, 0.165, 1);
+		transition: top 0.65s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+		&.show {
+			top:0;
+		}
+	}
+
 	.banner-text {
 		font-size: 7vw;
+	}
+
+	.banner-svg {
+		width: 20vw;
+		height: 20vw;
 	}
 
 	.banner-projects-button {
@@ -154,8 +169,17 @@
 		display: none;
 	}
 
+	.banner-overlay {
+		display: none;
+	}
+
 	.banner-text {
 		font-size: 4vw;
+	}
+
+	.banner-svg {
+		width: 15vw;
+		height: 15vw;
 	}
 
 	.banner-projects-button {
@@ -258,8 +282,17 @@
 		display: none;
 	}
 
+	.banner-overlay {
+		display: none;
+	}
+
 	.banner-text {
 		font-size: 4vw;
+	}
+
+	.banner-svg {
+		width: 15vw;
+		height: 15vw;
 	}
 
 	.banner-projects-button {

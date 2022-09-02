@@ -36,7 +36,8 @@ body {
   width: 100%;
   height: 2.5rem;
   background-color: #1e1e1e;
-  opacity: 1; }
+  opacity: 1;
+  z-index: 2; }
 
 .navbar-brand {
   display: flex;
@@ -124,12 +125,21 @@ body {
       bottom: 3px;
       transform: rotate(1035deg); }
 
+.banner-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #1e1e1e;
+  opacity: 0.85;
+  z-index: 0; }
+
 .banner {
   display: flex;
   height: 100vh;
   background: linear-gradient(-110deg, #1e1e1e, #070750, #4e0750, #b65b22);
   background-size: 400% 400%;
-  animation: gradient 50s ease infinite; }
+  animation: gradient 50s ease infinite;
+  z-index: 1; }
 
 .banner-content {
   display: flex;
@@ -146,10 +156,6 @@ body {
   text-align: center;
   color: #fefeff;
   margin: 1rem; }
-
-.banner-svg {
-  width: 10vw;
-  height: 10vw; }
 
 .banner-button-container {
   display: flex;
@@ -193,8 +199,17 @@ body {
     display: flex; }
   .navbar-brand {
     animation: menu-brand-downsize cubic-bezier(0.075, 0.82, 0.165, 1) 0.65s; }
+  .banner-overlay {
+    top: -100vh;
+    -webkit-transition: top 0.65s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: top 0.65s cubic-bezier(0.075, 0.82, 0.165, 1); }
+    .banner-overlay.show {
+      top: 0; }
   .banner-text {
     font-size: 7vw; }
+  .banner-svg {
+    width: 20vw;
+    height: 20vw; }
   .banner-projects-button {
     font-size: 9vw; } }
 
@@ -208,8 +223,13 @@ body {
     height: 36px; }
   .navbar-burger {
     display: none; }
+  .banner-overlay {
+    display: none; }
   .banner-text {
     font-size: 4vw; }
+  .banner-svg {
+    width: 15vw;
+    height: 15vw; }
   .banner-projects-button {
     font-size: 5vw; } }
 
@@ -223,7 +243,12 @@ body {
     height: 36px; }
   .navbar-burger {
     display: none; }
+  .banner-overlay {
+    display: none; }
   .banner-text {
     font-size: 4vw; }
+  .banner-svg {
+    width: 15vw;
+    height: 15vw; }
   .banner-projects-button {
     font-size: 5vw; } }

@@ -26,12 +26,10 @@ $primary-font:'Francois One', sans-serif;
 @keyframes open-menu-rolldown {
 	from {
 		margin-top: -200%;
-		
 	}
 
 	to {
 		margin-top: 0%;
-		
 	}
 }
 
@@ -50,11 +48,14 @@ $primary-font:'Francois One', sans-serif;
 @keyframes menu-brand-downsize {
 	from {
 		font-size: 2rem;
-		
 	}
 
 	to {
 		font-size: 1.5rem;
-		
 	}
 }
+
+@keyframes svg-move {
+	from { transform: rotate(0deg) translateX(25px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(25px) rotate(-360deg); }
+  }

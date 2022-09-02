@@ -22,6 +22,12 @@
   to {
     font-size: 1.5rem; } }
 
+@keyframes svg-move {
+  from {
+    transform: rotate(0deg) translateX(25px) rotate(0deg); }
+  to {
+    transform: rotate(360deg) translateX(25px) rotate(-360deg); } }
+
 body {
   height: 100%;
   font-size: 1rem;
@@ -145,7 +151,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%; }
+  width: 100%;
+  margin-top: 5%; }
 
 .banner-content-wrapper {
   display: flex;
@@ -156,6 +163,9 @@ body {
   text-align: center;
   color: #fefeff;
   margin: 1rem; }
+
+.banner-svg:hover {
+  animation: svg-move 2s infinite; }
 
 .banner-button-container {
   display: flex;
@@ -248,7 +258,7 @@ body {
   .banner-text {
     font-size: 4vw; }
   .banner-svg {
-    width: 15vw;
-    height: 15vw; }
+    width: 8vw;
+    height: 8vw; }
   .banner-projects-button {
     font-size: 5vw; } }

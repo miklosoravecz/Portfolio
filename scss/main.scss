@@ -152,6 +152,7 @@ body {
 		flex-direction: column;
 		justify-content: center;
 		width: 100%;
+		margin-top: 5%;
 	}
 
 	.banner-content-wrapper {
@@ -164,6 +165,10 @@ body {
 		text-align: center;
 		color: $primary-color;
 		margin: 1rem;
+	}
+
+	.banner-svg:hover {
+		animation: svg-move 2s infinite;
 	}
 
 	.banner-button-container {

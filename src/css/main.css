@@ -16,6 +16,12 @@
   100% {
     background-position: 0% 50%; } }
 
+@keyframes menu-brand-downsize {
+  from {
+    font-size: 2rem; }
+  to {
+    font-size: 1.5rem; } }
+
 body {
   height: 100%;
   font-size: 1rem;
@@ -138,9 +144,12 @@ body {
 
 .banner-text {
   text-align: center;
-  font-size: 3rem;
   color: #fefeff;
   margin: 1rem; }
+
+.banner-svg {
+  width: 10vw;
+  height: 10vw; }
 
 .banner-button-container {
   display: flex;
@@ -151,7 +160,7 @@ body {
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 2.5rem;
+  font-size: 5vw;
   font-weight: bolder;
   color: #ff914b;
   transition: transform .1s linear; }
@@ -183,7 +192,11 @@ body {
   .navbar-burger {
     display: flex; }
   .navbar-brand {
-    animation: menu-brand-downsize cubic-bezier(0.075, 0.82, 0.165, 1) 0.65s; } }
+    animation: menu-brand-downsize cubic-bezier(0.075, 0.82, 0.165, 1) 0.65s; }
+  .banner-text {
+    font-size: 7vw; }
+  .banner-projects-button {
+    font-size: 9vw; } }
 
 @media screen and (min-width: 801px) and (max-width: 1280px) {
   .navbar {
@@ -194,7 +207,11 @@ body {
     width: 36px;
     height: 36px; }
   .navbar-burger {
-    display: none; } }
+    display: none; }
+  .banner-text {
+    font-size: 4vw; }
+  .banner-projects-button {
+    font-size: 5vw; } }
 
 @media screen and (min-width: 1281px) {
   .navbar {
@@ -205,10 +222,8 @@ body {
     width: 36px;
     height: 36px; }
   .navbar-burger {
-    display: none; } }
-
-@keyframes menu-brand-downsize {
-  from {
-    font-size: 2rem; }
-  to {
-    font-size: 1.5rem; } }
+    display: none; }
+  .banner-text {
+    font-size: 4vw; }
+  .banner-projects-button {
+    font-size: 5vw; } }

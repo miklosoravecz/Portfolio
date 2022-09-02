@@ -46,3 +46,15 @@ $primary-font:'Francois One', sans-serif;
 		background-position: 0% 50%;
 	}
 }
+
+@keyframes menu-brand-downsize {
+	from {
+		font-size: 2rem;
+		
+	}
+
+	to {
+		font-size: 1.5rem;
+		
+	}
+}

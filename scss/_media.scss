@@ -32,6 +32,14 @@
 		animation: menu-brand-downsize cubic-bezier(0.075, 0.82, 0.165, 1) 0.65s;
 	}
 
+	.banner-text {
+		font-size: 7vw;
+	}
+
+	.banner-projects-button {
+		font-size: 9vw;
+	}
+
 	// header {
 	// 	align-items: center;
 	// 	justify-content: center;
@@ -142,12 +150,16 @@
 		height: 36px;
 	}
 
-	.navbar-menu {
-	
-	}
-
 	.navbar-burger {
 		display: none;
+	}
+
+	.banner-text {
+		font-size: 4vw;
+	}
+
+	.banner-projects-button {
+		font-size: 5vw;
 	}
 
 	
@@ -242,12 +254,16 @@
 		height: 36px;
 	}
 
-	.navbar-menu {
-	
-	}
-
 	.navbar-burger {
 		display: none;
+	}
+
+	.banner-text {
+		font-size: 4vw;
+	}
+
+	.banner-projects-button {
+		font-size: 5vw;
 	}
 
 	// header {
@@ -305,14 +321,4 @@
 	// 	width: 13rem;
 	// }
 }
-@keyframes menu-brand-downsize {
-	from {
-		font-size: 2rem;
-		
-	}
 
-	to {
-		font-size: 1.5rem;
-		
-	}
-}

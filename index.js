@@ -8,6 +8,10 @@ const projectsButton = document.getElementById('projects-btn')
 const contactButton = document.getElementById('contact-btn')
 const overlay = document.getElementById('banner-overlay')
 const aboutSection = document.getElementById('about')
+const outerCircle = document.getElementById('outer-circle-svg')
+const innerCircle = document.getElementById('smaller-circle-svg')
+const portrait = document.getElementById('portrait-svg')
+const shadow = document.getElementById('shadow-svg')
 // const button = document.getElementById('lang-button')
 // const logoSubtitle = document.getElementById('logo-subtitle')
 // const mainTitle = document.getElementById('main-title')
@@ -58,6 +62,22 @@ const toggleNavBlur = () => {
 	let navbarHeight = navbar.offsetHeight
 	navbar.classList.toggle('add-blur',(navbarHeight > elementPositionFromViewportTop))
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+	document.addEventListener('scroll', function() {
+		let circlePositionFromViewportTop = outerCircle.getBoundingClientRect().top
+		let outerCircleOffsetTop = outerCircle.offsetTop
+		
+		if (outerCircleOffsetTop + 20 >= circlePositionFromViewportTop) {
+			outerCircle.classList.add('animation')
+			innerCircle.classList.add('animation')
+			shadow.classList.add('animation')
+			portrait.classList.add('animation')
+
+		}
+		
+	})
+})
 
 // const intro2TextEnglish = `
 // <p>

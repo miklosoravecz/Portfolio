@@ -296,9 +296,37 @@ body {
     margin-top: 3rem; }
   .section1-subtitle {
     font-size: 1.3rem; }
-  .outer-circle-svg, .smaller-circle-svg, .portrait-svg {
+  .portrait-svg {
     min-width: 250px;
-    max-width: 44%; } }
+    max-width: 44%; }
+  .outer-circle-svg {
+    transition: all 0.65s cubic-bezier(0.075, 0.82, 0.165, 1);
+    min-width: 0;
+    max-width: 0; }
+    .outer-circle-svg.animation {
+      min-width: 250px;
+      max-width: 44%; }
+  .smaller-circle-svg {
+    transition: all 0.65s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-delay: 0.325s;
+    min-width: 320px;
+    max-width: 55%; }
+    .smaller-circle-svg.animation {
+      min-width: 250px;
+      max-width: 44%; }
+  .portrait-svg {
+    opacity: 0;
+    transition: opacity 1.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+    .portrait-svg.animation {
+      opacity: 1; }
+  .shadow-svg {
+    opacity: 1;
+    transition: opacity 1.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    min-width: 250px;
+    max-width: 44%;
+    z-index: 10; }
+    .shadow-svg.animation {
+      opacity: 0; } }
 
 @media screen and (min-width: 801px) and (max-width: 1280px) {
   .navbar {
@@ -327,8 +355,36 @@ body {
     font-size: 2rem; }
   .section1-content {
     font-size: 0.8rem; }
-  .outer-circle-svg, .smaller-circle-svg, .portrait-svg {
-    width: 40%; } }
+  .portrait-svg {
+    min-width: 250px;
+    max-width: 44%; }
+  .outer-circle-svg {
+    transition: all 0.65s cubic-bezier(0.075, 0.82, 0.165, 1);
+    min-width: 0;
+    max-width: 0; }
+    .outer-circle-svg.animation {
+      min-width: 250px;
+      max-width: 44%; }
+  .smaller-circle-svg {
+    transition: all 0.65s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-delay: 0.325s;
+    min-width: 500px;
+    max-width: 55%; }
+    .smaller-circle-svg.animation {
+      min-width: 250px;
+      max-width: 45%; }
+  .portrait-svg {
+    opacity: 0;
+    transition: opacity 1.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+    .portrait-svg.animation {
+      opacity: 1; }
+  .shadow-svg {
+    opacity: 1;
+    transition: opacity 1.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    max-width: 88%;
+    z-index: 10; }
+    .shadow-svg.animation {
+      opacity: 0; } }
 
 @media screen and (min-width: 1281px) {
   .navbar {
@@ -357,5 +413,33 @@ body {
     font-size: 2rem; }
   .section1-content {
     font-size: 1rem; }
-  .outer-circle-svg, .smaller-circle-svg, .portrait-svg {
-    width: 35%; } }
+  .portrait-svg {
+    min-width: 250px;
+    max-width: 35%; }
+  .outer-circle-svg {
+    transition: all 0.65s cubic-bezier(0.075, 0.82, 0.165, 1);
+    min-width: 0;
+    max-width: 0; }
+    .outer-circle-svg.animation {
+      min-width: 250px;
+      max-width: 35%; }
+  .smaller-circle-svg {
+    transition: all 0.65s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-delay: 0.325s;
+    min-width: 500px;
+    max-width: 45%; }
+    .smaller-circle-svg.animation {
+      min-width: 250px;
+      max-width: 35%; }
+  .portrait-svg {
+    opacity: 0;
+    transition: opacity 1.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+    .portrait-svg.animation {
+      opacity: 1; }
+  .shadow-svg {
+    opacity: 1;
+    transition: opacity 1.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    max-width: 70%;
+    z-index: 10; }
+    .shadow-svg.animation {
+      opacity: 0; } }

@@ -205,7 +205,6 @@ body {
 
 .section1 {
   display: flex;
-  flex-direction: row;
   margin-top: 100vh; }
 
 .section1-left {
@@ -284,8 +283,16 @@ body {
     height: 20vw; }
   .banner-projects-button {
     font-size: 9vw; }
+  .section1 {
+    flex-direction: column;
+    flex-flow: column-reverse; }
+  .section1-title {
+    font-size: 1rem;
+    margin-top: 3rem; }
+  .section1-subtitle {
+    font-size: 1.3rem; }
   .outer-circle-svg, .smaller-circle-svg, .portrait-svg {
-    width: 40%; } }
+    width: 70%; } }
 
 @media screen and (min-width: 801px) and (max-width: 1280px) {
   .navbar {
@@ -306,6 +313,12 @@ body {
     height: 15vw; }
   .banner-projects-button {
     font-size: 5vw; }
+  .section1 {
+    flex-direction: row; }
+  .section1-title {
+    font-size: 1.2rem; }
+  .section1-subtitle {
+    font-size: 2rem; }
   .section1-content {
     font-size: 0.8rem; }
   .outer-circle-svg, .smaller-circle-svg, .portrait-svg {
@@ -330,6 +343,12 @@ body {
     height: 8vw; }
   .banner-projects-button {
     font-size: 5vw; }
+  .section1 {
+    flex-direction: row; }
+  .section1-title {
+    font-size: 1.2rem; }
+  .section1-subtitle {
+    font-size: 2rem; }
   .section1-content {
     font-size: 1rem; }
   .outer-circle-svg, .smaller-circle-svg, .portrait-svg {

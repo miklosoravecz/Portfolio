@@ -55,12 +55,26 @@
 		font-size: 9vw;
 	}
 
+	.section1 {
+		flex-direction: column;
+		flex-flow: column-reverse;
+	}
+
 	.section1-right {
 	
 	}
 
+	.section1-title {
+		font-size: 1rem;
+		margin-top: 3rem;
+	}
+
+	.section1-subtitle {
+		font-size: 1.3rem;
+	}
+
 	.outer-circle-svg, .smaller-circle-svg, .portrait-svg {
-		width: 40%;
+		width: 70%;
 	}
 
 	// .section {
@@ -199,8 +213,20 @@
 		font-size: 5vw;
 	}
 
+	.section1 {
+		flex-direction: row;
+	}
+
 	.section1-right {
 
+	}
+
+	.section1-title {
+		font-size: 1.2rem;
+	}
+
+	.section1-subtitle {
+		font-size: 2rem;
 	}
 
 	.section1-content {
@@ -328,8 +354,20 @@
 		font-size: 5vw;
 	}
 
+	.section1 {
+		flex-direction: row;
+	}
+
 	.section1-right {
 	
+	}
+
+	.section1-title {
+		font-size: 1.2rem;
+	}
+
+	.section1-subtitle {
+		font-size: 2rem;
 	}
 
 	.section1-content {

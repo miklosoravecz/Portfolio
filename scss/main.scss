@@ -251,7 +251,7 @@ body {
 
 	.section1-title {
 		color: $primary-color;
-		font-size: 1rem;
+		font-size: 1.2rem;
 	}
 
 	.section1-subtitle {
@@ -260,7 +260,8 @@ body {
 	}
 
 	.section1-content {
-
+		font-size: 0.6rem;
+		transition: font-size 0.65s cubic-bezier(0.075, 0.82, 0.165, 1);
 	}
 
 	.section1-text {

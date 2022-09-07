@@ -227,11 +227,15 @@ body {
 
 .section1-title {
   color: #fefeff;
-  font-size: 1rem; }
+  font-size: 1.2rem; }
 
 .section1-subtitle {
   color: #ff914b;
   font-size: 2rem; }
+
+.section1-content {
+  font-size: 0.6rem;
+  transition: font-size 0.65s cubic-bezier(0.075, 0.82, 0.165, 1); }
 
 .section1-text {
   color: #fefeff;
@@ -302,6 +306,8 @@ body {
     height: 15vw; }
   .banner-projects-button {
     font-size: 5vw; }
+  .section1-content {
+    font-size: 0.8rem; }
   .outer-circle-svg, .smaller-circle-svg, .portrait-svg {
     width: 40%; } }
 
@@ -324,5 +330,7 @@ body {
     height: 8vw; }
   .banner-projects-button {
     font-size: 5vw; }
+  .section1-content {
+    font-size: 1rem; }
   .outer-circle-svg, .smaller-circle-svg, .portrait-svg {
     width: 35%; } }

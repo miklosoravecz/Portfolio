@@ -74,7 +74,8 @@
 	}
 
 	.outer-circle-svg, .smaller-circle-svg, .portrait-svg {
-		width: 70%;
+		min-width: 250px;
+		max-width: 44%;
 	}
 
 	// .section {

@@ -1,4 +1,5 @@
 const burgerButton = document.getElementById('burger-button')
+const navbar = document.getElementById('navbar')
 const navbarMenu = document.getElementById('navbar-menu')
 const menuItems = document.querySelectorAll('.menu-item')
 const burgerLines = document.querySelectorAll('.navbar-burger-bar')
@@ -6,6 +7,7 @@ const aboutButton = document.getElementById('about-btn')
 const projectsButton = document.getElementById('projects-btn')
 const contactButton = document.getElementById('contact-btn')
 const overlay = document.getElementById('banner-overlay')
+const aboutSection = document.getElementById('about')
 // const button = document.getElementById('lang-button')
 // const logoSubtitle = document.getElementById('logo-subtitle')
 // const mainTitle = document.getElementById('main-title')
@@ -50,6 +52,13 @@ const closeMenu = () => {
 	burgerLines.forEach((item) => item.classList.remove('show'))
 	burgerMenuOpened = false
 }
+
+const toggleNavBlur = () => {
+	let elementPositionFromViewportTop = aboutSection.getBoundingClientRect().top
+	let navbarHeight = navbar.offsetHeight
+	navbar.classList.toggle('add-blur',(navbarHeight > elementPositionFromViewportTop))
+}
+
 // const intro2TextEnglish = `
 // <p>
 // I had worked before in different fields in my life and I have many kinds of hobbies. I don't like boring things, I am eager to know or learn something new. They say about me I am creative. I like challenges and technically complex tasks, that is why I choosed to work in the IT field.
@@ -141,9 +150,12 @@ const closeMenu = () => {
 // }
 
 // textSelector()
+//toggleNavBlur()
 
 burgerButton.addEventListener('click', toggleMenu)
 aboutButton.addEventListener('click', closeMenu)
 projectsButton.addEventListener('click', closeMenu)
 contactButton.addEventListener('click', closeMenu)
+//document.addEventListener('resize', setWidth)
+document.addEventListener('scroll', toggleNavBlur)
 // button.addEventListener('click', onClick)

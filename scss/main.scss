@@ -14,10 +14,17 @@ body {
 		flex-direction: row;
 		width: 100%;
 		height: 2.5rem;
-		background-color: $background-color;
+		background: $background-color;
 		opacity: 1;
 		z-index: 4;
 		top: 0;
+		backdrop-filter: none;
+		transition: all 0.65s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+		&.add-blur {
+			backdrop-filter: blur(5px);
+			background: rgba(30, 30, 30, 0.7);
+		}
 	}
 	
 	.navbar-brand {
@@ -281,46 +288,9 @@ body {
 	
 	
 
-	// .page-container {
-	// 	display:flex;
-	// 	flex-direction: column;
-	// 	align-items: center;
-	// 	justify-content: center;
-	// 	background: linear-gradient(
-	// 		90deg,
-	// 		rgba(237, 246, 249, 0.2553396358543417) 20%,
-	// 		rgba(149, 152, 186, 1) 100%,
-	// 		rgba(30, 1, 34, 1) 100%,
-	// 		rgba(101, 68, 110, 1) 100%
-	// 	);
-	// }
 
-	// header {
-	// 	display: flex;
-	// 	flex-direction: row;
-	// 	align-items: center;
-	// 	justify-content: space-between;
-	// 	width: 75%;
-		
-	// }
 
-	// .header-wrapper {
-	// 	display: flex;
-	// 	flex-direction: column;
-	// 	align-items: center;
-	// }
 
-	// .header-title {
-	// 	font-family: $header-title;
-	// }
-
-	// .h2 {
-	// 	font-family: $header-title;
-	// }
-
-	// .main {
-	// 	width: 97%;
-	// }
 
 	// .main__section-one, .main__section-two, .main__section-two-b, .main__section-three, .main__section-four, .main__section-five, .main__section-six, .main__section-ten__content {
 	// 	box-shadow: 10px 10px 25px -5px $text-dark;
@@ -482,10 +452,6 @@ body {
 	// .link {
 	// 	cursor: pointer;
 	// 	margin-right: 1rem;
-	// }
-
-	// .link-pic {
-	// 	width: 90px;
 	// }
 
 	// .contact-wrapper {

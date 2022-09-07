@@ -43,10 +43,15 @@ body {
   flex-direction: row;
   width: 100%;
   height: 2.5rem;
-  background-color: #1e1e1e;
+  background: #1e1e1e;
   opacity: 1;
   z-index: 4;
-  top: 0; }
+  top: 0;
+  backdrop-filter: none;
+  transition: all 0.65s cubic-bezier(0.075, 0.82, 0.165, 1); }
+  .navbar.add-blur {
+    backdrop-filter: blur(5px);
+    background: rgba(30, 30, 30, 0.7); }
 
 .navbar-brand {
   display: flex;
@@ -292,7 +297,8 @@ body {
   .section1-subtitle {
     font-size: 1.3rem; }
   .outer-circle-svg, .smaller-circle-svg, .portrait-svg {
-    width: 70%; } }
+    min-width: 250px;
+    max-width: 44%; } }
 
 @media screen and (min-width: 801px) and (max-width: 1280px) {
   .navbar {

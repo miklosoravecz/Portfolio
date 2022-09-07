@@ -9,29 +9,29 @@
         <title>Portfolio</title>
     </head>
     <body>
-        <div class="index-page">
-            <header>
-                <nav class="navbar">
-                    <a href="#" class="navbar-brand">
-                        <img class="navbar-img" src="./src/svg/own-icon.svg" alt="own-icon" ></img>
-                        Portfolio
-                    </a>
-                    <div class="navbar-menu" id="navbar-menu">
-                        <a class="menu-item" href="#">Projects</a>
-                        <a class="menu-item" href="#">About</a>
-                        <a class="menu-item" href="#">Contact</a>
-                    </div>
-                    <div class="navbar-burger">
-                        <button type="button" class="navbar-burger-button" id="burger-button">
-                            <div class="navbar-burger-bar"></div>
-                            <div class="navbar-burger-bar"></div>
-                            <div class="navbar-burger-bar"></div>
-                        </button>
-                    </div>
-                </nav>
-            </header>
+        <header id="#">
+            <nav class="navbar">
+                <a href="#" class="navbar-brand">
+                    <img class="navbar-img" src="./src/svg/own-icon.svg" alt="own-icon" ></img>
+                    Portfolio
+                </a>
+                <div class="navbar-menu" id="navbar-menu">
+                    <a class="menu-item" href="#about">About</a>
+                    <a class="menu-item" href="#projects">Projects</a>
+                    <a class="menu-item" href="#contact">Contact</a>
+                </div>
+                <div class="navbar-burger">
+                    <button type="button" class="navbar-burger-button" id="burger-button">
+                        <div class="navbar-burger-bar"></div>
+                        <div class="navbar-burger-bar"></div>
+                        <div class="navbar-burger-bar"></div>
+                    </button>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="overlay" id="banner-overlay"></div>
             <div class="banner">
-                <div class="banner-overlay" id="banner-overlay"></div>
                 <div class="banner-content">
                     <div class="banner-content-wrapper">
                         <p class="banner-text">
@@ -49,9 +49,41 @@
                     </div>
                 </div>
             </div>
-            <div class="section1">
+            <div class="section section1" id="about">
+                <div class="section1-left">
+                    <img class="outer-circle-svg" src="./src/svg/outer-circle.svg" alt="outer-circle" ></img>
+                    <img class="smaller-circle-svg" src="./src/svg/smaller-circle.svg" alt="smaller-circle" ></img>
+                    <img class="portrait-svg" src="./src/svg/portrait.svg" alt="portrait" ></img>
+                </div>
+                <div class="section1-right">
+                    <div class="section1-title">
+                        ABOUT
+                    </div>
+                    <div class="section1-subtitle">
+                        Developer
+                    </div>
+                    <div class="section1-content">
+                        <p class="section1-text">
+                            Hi, my name is Miklós from Tampere, Finland. I'm a highly motivated web developer, who passionate about create something new, curious about finding solutions for different problems.
+                        </p>
+                        <p class="section1-text">
+                            I have experience in Full-stack and Front-end web application development, also worked on some graphic designing. I'm intrested in working on fascinating projects with positive people.  I am eager to know or learn something new.
+                        </p>
+                        <p class="section1-text">
+                            They say about me I am creative and friendly. I'm a well-organised person, who like challenges. Fan of music, gigs, gaming, travelling, the nature, good foods and cooking.
+                        </p>
+                    </div>
+                </div>
             </div>
-        </div>
+            <div class="intersection">WORK</div>
+            <div class="section section2" name="projects">
+            </div>
+            <div class="intersection"></div>
+            <div class="section section3">
+            </div>
+        </main>
+        <footer class="footer" name="contact">
+        </footer>
         <script src="index.js"></script>
     </body>
 </html>

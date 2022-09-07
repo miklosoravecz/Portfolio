@@ -32,7 +32,7 @@
 		animation: menu-brand-downsize cubic-bezier(0.075, 0.82, 0.165, 1) 0.65s;
 	}
 
-	.banner-overlay {
+	.overlay {
 		top: -100vh;
 		-webkit-transition: top 0.65s cubic-bezier(0.075, 0.82, 0.165, 1);
 		transition: top 0.65s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -54,6 +54,15 @@
 	.banner-projects-button {
 		font-size: 9vw;
 	}
+
+	.outer-circle-svg, .smaller-circle-svg, .portrait-svg {
+		width: 40%;
+	}
+
+	// .section {
+	// 	height: calc(100vh - 2.5rem);
+	// }
+
 
 	// header {
 	// 	align-items: center;
@@ -169,7 +178,7 @@
 		display: none;
 	}
 
-	.banner-overlay {
+	.overlay {
 		display: none;
 	}
 
@@ -186,7 +195,14 @@
 		font-size: 5vw;
 	}
 
-	
+	.outer-circle-svg, .smaller-circle-svg, .portrait-svg {
+		width: 40%;
+	}
+
+	// .section {
+	// 	height: calc(100vh - 4rem);
+	// }
+
 
 	// header {
 	// 	align-items: flex-start;
@@ -282,7 +298,7 @@
 		display: none;
 	}
 
-	.banner-overlay {
+	.overlay {
 		display: none;
 	}
 
@@ -298,6 +314,15 @@
 	.banner-projects-button {
 		font-size: 5vw;
 	}
+
+	.outer-circle-svg, .smaller-circle-svg, .portrait-svg {
+		width: 35%;
+	}
+
+
+	// .section {
+	// 	height: calc(100vh - 4rem);
+	// }
 
 	// header {
 	// 	align-items: flex-start;

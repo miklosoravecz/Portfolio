@@ -27,7 +27,7 @@ body {
 		}
 	}
 	
-	.navbar-brand {
+	.navbar-brand, .footer-brand {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
@@ -35,19 +35,23 @@ body {
 		font-size: 1.5rem;
 		font-weight: bold;
 		color: $primary-color;
-		margin-left: 5%;
 		animation: open-menu-rolldown cubic-bezier(0.075, 0.82, 0.165, 1) 0.65s;
 	}
 
-	.navbar-brand:hover {
+	.navbar-brand {
+		margin-left: 5%;
+	}
+	
+
+	.navbar-brand:hover, .footer-brand:hover {
 		color: $secondary-color;
 	}
 
-	.navbar-brand:active {
+	.navbar-brand:active, .footer-brand:active {
 		transform: scale(1.1)
 	}
 
-	.navbar-img {
+	.navbar-img, .footer-img {
 		width: 32px;
 		height: 29px;
 		margin-right: 0.1rem;
@@ -263,6 +267,10 @@ body {
 		padding-right: 2rem;
 	}
 
+	.section3 {
+		background-color: $darken-light;
+	}
+
 	.intersection {
 		display: flex;
 		justify-content: center;
@@ -270,6 +278,50 @@ body {
 		background-color: $darken-light;
 		height: 25vh;
 		font-size: larger;
+	}
+
+	.footer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		color: $primary-color;
+		background-color: $background-color;
+	}
+
+	.footer-content {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+	}
+
+	.footer-left, .footer-right{
+		display: flex;
+		flex-direction: column;
+		flex-basis: 50%;
+		align-items: center;
+	}
+
+	.footer-left {
+		height: 90%;
+		justify-content: center;
+	}
+
+	.footer-title {
+		color: $primary-color;
+		font-size: 2.5rem;
+	}
+
+	.footer-copyright {
+		font-size: 0.7rem;
+	
+	}
+
+	.footer-right {
+		height: 90%;
+		justify-content: space-evenly;
 	}
 
 @import "media";

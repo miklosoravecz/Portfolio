@@ -118,6 +118,31 @@
 				opacity: 0;
 			}
 	}
+
+	
+	.footer {
+		height: 100vw;
+	}
+
+	.footer-content {
+		flex-direction: column;
+	}
+
+	.footer-title {
+		font-size: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	.footer-brand {
+		font-size: 1.5rem;
+	}
+
+	.footer-img {
+		width: 32px;
+		height: 29px;
+		margin-top: -1px;
+		margin-right: 0.1rem;
+	}
 }
 
 //medium screen
@@ -223,6 +248,10 @@
 				opacity: 0;
 			}
 	}
+
+	.footer {
+		height: 25vw;
+	}
 }
 
 //large screen
@@ -326,5 +355,9 @@
 		&.animation {
 			opacity: 0;
 		}
+	}
+
+	.footer {
+		height: 17vw;
 	}
 }

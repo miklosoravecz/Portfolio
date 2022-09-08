@@ -53,7 +53,7 @@ body {
     backdrop-filter: blur(5px);
     background: rgba(30, 30, 30, 0.7); }
 
-.navbar-brand {
+.navbar-brand, .footer-brand {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -61,16 +61,18 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
   color: #fefeff;
-  margin-left: 5%;
   animation: open-menu-rolldown cubic-bezier(0.075, 0.82, 0.165, 1) 0.65s; }
 
-.navbar-brand:hover {
+.navbar-brand {
+  margin-left: 5%; }
+
+.navbar-brand:hover, .footer-brand:hover {
   color: #ff914b; }
 
-.navbar-brand:active {
+.navbar-brand:active, .footer-brand:active {
   transform: scale(1.1); }
 
-.navbar-img {
+.navbar-img, .footer-img {
   width: 32px;
   height: 29px;
   margin-right: 0.1rem;
@@ -246,6 +248,9 @@ body {
   padding-left: 2rem;
   padding-right: 2rem; }
 
+.section3 {
+  background-color: #e9e3dc; }
+
 .intersection {
   display: flex;
   justify-content: center;
@@ -253,6 +258,42 @@ body {
   background-color: #e9e3dc;
   height: 25vh;
   font-size: larger; }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: #fefeff;
+  background-color: #1e1e1e; }
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 100%; }
+
+.footer-left, .footer-right {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  align-items: center; }
+
+.footer-left {
+  height: 90%;
+  justify-content: center; }
+
+.footer-title {
+  color: #fefeff;
+  font-size: 2.5rem; }
+
+.footer-copyright {
+  font-size: 0.7rem; }
+
+.footer-right {
+  height: 90%;
+  justify-content: space-evenly; }
 
 @media screen and (max-width: 800px) {
   .navbar-menu {
@@ -327,7 +368,21 @@ body {
     max-width: 44%;
     z-index: 10; }
     .shadow-svg.animation {
-      opacity: 0; } }
+      opacity: 0; }
+  .footer {
+    height: 100vw; }
+  .footer-content {
+    flex-direction: column; }
+  .footer-title {
+    font-size: 2rem;
+    margin-bottom: 2rem; }
+  .footer-brand {
+    font-size: 1.5rem; }
+  .footer-img {
+    width: 32px;
+    height: 29px;
+    margin-top: -1px;
+    margin-right: 0.1rem; } }
 
 @media screen and (min-width: 801px) and (max-width: 1280px) {
   .navbar {
@@ -386,7 +441,9 @@ body {
     max-width: 88%;
     z-index: 10; }
     .shadow-svg.animation {
-      opacity: 0; } }
+      opacity: 0; }
+  .footer {
+    height: 25vw; } }
 
 @media screen and (min-width: 1281px) {
   .navbar {
@@ -445,4 +502,6 @@ body {
     max-width: 70%;
     z-index: 10; }
     .shadow-svg.animation {
-      opacity: 0; } }
+      opacity: 0; }
+  .footer {
+    height: 17vw; } }

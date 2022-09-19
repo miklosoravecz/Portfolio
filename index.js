@@ -13,6 +13,8 @@ const outerCircle = document.getElementById('outer-circle-svg')
 const innerCircle = document.getElementById('smaller-circle-svg')
 const portrait = document.getElementById('portrait-svg')
 const shadow = document.getElementById('shadow-svg')
+const emailLink = document.getElementById('footer-href-email')
+const footerPopup = document.getElementById('footer-copy-popup')
 
 let burgerMenuOpened = false
 const buttonGroup = [navbarHomeButton, aboutButton, projectsButton, contactButton]
@@ -57,6 +59,15 @@ const animationOnScroll = () => {
 	}
 }
 
+const copyToClipboard = () => {
+	navigator.clipboard.writeText('oravecz.miklos@gmail.com')
+	footerPopup.classList.add('show-message')
+
+	setTimeout(() => {
+		footerPopup.classList.remove('show-message')
+	}, '1000')
+}
+
 const domLoaded = () => {
 	document.addEventListener('scroll', animationOnScroll)
 }
@@ -67,3 +78,4 @@ burgerButton.addEventListener('click', toggleMenu)
 buttonGroup.forEach(item => {
 	item.addEventListener('click', closeMenu)
 })
+emailLink.addEventListener('click', copyToClipboard)

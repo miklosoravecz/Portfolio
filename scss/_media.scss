@@ -143,6 +143,14 @@
 		margin-top: -1px;
 		margin-right: 0.1rem;
 	}
+
+	
+	.footer-copy-popup {
+
+		&.show-message {
+			top: -1.3rem;
+		}
+	}
 }
 
 //medium screen
@@ -252,6 +260,15 @@
 	.footer {
 		height: 25vw;
 	}
+
+	
+	.footer-copy-popup {
+
+		&.show-message {
+			top: 0rem;
+			left: -9rem;
+		}
+	}
 }
 
 //large screen
@@ -359,5 +376,13 @@
 
 	.footer {
 		height: 17vw;
+	}
+
+	.footer-copy-popup {
+
+		&.show-message {
+			top: 0rem;
+			left: -9rem;
+		}
 	}
 }

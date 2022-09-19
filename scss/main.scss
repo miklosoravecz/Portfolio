@@ -324,4 +324,51 @@ body {
 		justify-content: space-evenly;
 	}
 
+	.footer-href {
+		display: flex;
+		position: relative;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		color: $primary-color;
+	}
+
+
+
+	.footer-href:hover {
+		color: $secondary-color;
+	}
+
+	.footer-href:hover svg {
+		fill: $secondary-color;
+	}
+
+	.footer-href:active {
+		transform: scale(1.1);
+	}
+
+	.footer-svg {
+		fill: $primary-color;
+		width: 28px;
+		height: 28px;
+	}
+
+	.footer-copy-popup {
+		display: none;
+		cursor: default;
+
+		&.show-message {
+			display: initial;
+			position: absolute;
+			top: -1.3rem;
+			animation: open-menu-rolldown cubic-bezier(0.075, 0.82, 0.165, 1) 0.65s;
+		}
+	}
+
+	.footer-copy {
+		color: $secondary-color;
+		font-size: 1rem;
+	}
+
 @import "media";

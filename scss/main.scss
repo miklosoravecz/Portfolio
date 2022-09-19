@@ -371,4 +371,18 @@ body {
 		font-size: 1rem;
 	}
 
+	.carousel {
+		padding: 10%;
+	}
+
+	.carousel-block-img-wrapper {
+		width:50%;
+	}
+
+	.carousel-block-img {
+		object-fit: contain;
+		width: 100%;
+		height: 100%;
+	}
+
 @import "media";

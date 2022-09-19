@@ -36,6 +36,7 @@
 	"settings": {},
 	"globals": {
 		"document": true,
-		"window": true
+		"window": true,
+		"navigator": true
 	}
 }

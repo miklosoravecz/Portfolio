@@ -121,7 +121,8 @@
 
 	
 	.footer {
-		height: 100vw;
+		min-height: 367px;
+		height: 55vw;
 	}
 
 	.footer-content {
@@ -130,7 +131,6 @@
 
 	.footer-title {
 		font-size: 2rem;
-		margin-bottom: 2rem;
 	}
 
 	.footer-brand {
@@ -258,6 +258,7 @@
 	}
 
 	.footer {
+		min-height: 12rem;
 		height: 25vw;
 	}
 

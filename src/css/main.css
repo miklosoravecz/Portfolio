@@ -10,6 +10,18 @@
   to {
     margin-top: 0%; } }
 
+@keyframes slide-from-left {
+  from {
+    margin-left: -200%; }
+  to {
+    margin-left: 0%; } }
+
+@keyframes slide-from-right {
+  from {
+    margin-left: 100%; }
+  to {
+    margin-right: 0%; } }
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%; }
@@ -335,11 +347,28 @@ body {
   font-size: 1rem; }
 
 .carousel {
-  background-image: url("../svg/blogzone.svg");
   background-repeat: no-repeat;
   position: absolute;
   width: 100%;
   height: 100%; }
+
+.carousel, .carousel-item-hidden {
+  display: none; }
+
+.carousel-item-visible {
+  display: block; }
+
+.item1 {
+  background-image: url("../svg/blogzone.svg"); }
+
+.item2 {
+  background-image: url("../svg/lena.svg"); }
+
+.item3 {
+  background-image: url("../svg/angular.svg"); }
+
+.item4 {
+  background-image: url("../svg/todo.svg"); }
 
 .carousel-block {
   display: flex;
@@ -366,7 +395,7 @@ body {
 .carousel-link {
   display: flex;
   justify-content: center;
-  margin-top: 2rem; }
+  margin-top: 1rem; }
 
 .carousel-href {
   display: flex;
@@ -388,6 +417,35 @@ body {
 
 .carousel-right-caret {
   right: 0.3rem; }
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 95%;
+  width: 100%; }
+
+.carousel-dot {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin: 0 10px;
+  background-color: #fefeff;
+  border-radius: 50%; }
+  .carousel-dot.active {
+    background-color: #ff914b; }
+
+.carousel-dot:hover {
+  background-color: #e9e3dc; }
+
+.carousel-dot:active {
+  background-color: #ff914b; }
+
+.slide-from-left {
+  animation: slide-from-left cubic-bezier(0.075, 0.82, 0.165, 1) 0.65s; }
+
+.slide-from-right {
+  animation: slide-from-right cubic-bezier(0.075, 0.82, 0.165, 1) 0.65s; }
 
 @media screen and (max-width: 800px) {
   .navbar-menu {
@@ -503,7 +561,13 @@ body {
     width: 28px;
     height: 28px; }
   .carousel-left-caret, .carousel-right-caret {
-    top: 85%; } }
+    top: 85%; }
+  .carousel-dots {
+    top: 89%; }
+  .carousel-dot {
+    height: 25px;
+    width: 25px;
+    margin: 0 15px; } }
 
 @media screen and (min-width: 801px) and (max-width: 1280px) {
   .navbar {

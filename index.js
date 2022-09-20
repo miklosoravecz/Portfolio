@@ -15,9 +15,16 @@ const portrait = document.getElementById('portrait-svg')
 const shadow = document.getElementById('shadow-svg')
 const emailLink = document.getElementById('footer-href-email')
 const footerPopup = document.getElementById('footer-copy-popup')
+const slides = document.getElementsByClassName('carousel')
+const leftButton = document.getElementById('carousel-left-caret')
+const rightButton = document.getElementById('carousel-right-caret')
+const dots = document.getElementsByClassName('carousel-dot')
 
-let burgerMenuOpened = false
+const numberOfSlides = slides.length
 const buttonGroup = [navbarHomeButton, aboutButton, projectsButton, contactButton]
+const dotsArray = Array.from(dots)
+let position = 0
+let burgerMenuOpened = false
 
 const toggleMenu = () => {
 	if (!burgerMenuOpened) {
@@ -59,6 +66,58 @@ const animationOnScroll = () => {
 	}
 }
 
+const removeActiveClassFromDots = () => {
+	dotsArray.forEach(dot => {
+		dot.classList.remove('active')
+	})
+}
+
+const hideAllSlides = () => {
+	removeActiveClassFromDots()
+	for (const slide of slides) {
+		slide.classList.remove('carousel-item-visible')
+		slide.classList.remove('slide-from-left')
+		slide.classList.remove('slide-from-right')
+		slide.classList.add('carousel-item-hidden')
+	}
+}
+
+const handleMoveToNextSlide = () => {
+	hideAllSlides()
+	if (position === numberOfSlides - 1) {
+		position = 0
+	} else {
+		position++
+	}
+
+	slides[position].classList.add('carousel-item-visible')
+	slides[position].classList.add('slide-from-right')
+	dots[position].classList.add('active')
+}
+
+const handleMoveToPrevSlide = () => {
+	hideAllSlides()
+	if (position === 0) {
+		position = numberOfSlides - 1
+	} else {
+		position--
+	}
+
+	slides[position].classList.add('carousel-item-visible')
+	slides[position].classList.add('slide-from-left')
+	dots[position].classList.add('active')
+}
+
+const navigateToSlide = (event) => {
+	hideAllSlides()
+	removeActiveClassFromDots()
+	let positionNum = parseInt(event.srcElement.id)
+	position = positionNum
+	slides[position].classList.add('carousel-item-visible')
+	slides[position].classList.add('slide-from-left')
+	dots[position].classList.add('active')
+}
+
 const copyToClipboard = () => {
 	navigator.clipboard.writeText('oravecz.miklos@gmail.com')
 	footerPopup.classList.add('show-message')
@@ -77,5 +136,10 @@ document.addEventListener('scroll', toggleNavBlur)
 burgerButton.addEventListener('click', toggleMenu)
 buttonGroup.forEach(item => {
 	item.addEventListener('click', closeMenu)
+})
+leftButton.addEventListener('click', handleMoveToPrevSlide)
+rightButton.addEventListener('click', handleMoveToNextSlide)
+dotsArray.forEach(dot => {
+	dot.addEventListener('click', navigateToSlide)
 })
 emailLink.addEventListener('click', copyToClipboard)

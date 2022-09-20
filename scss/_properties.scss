@@ -37,6 +37,26 @@ $primary-font:'Francois One', sans-serif;
 	}
 }
 
+@keyframes slide-from-left {
+	from {
+		margin-left: -200%;
+	}
+
+	to {
+		margin-left: 0%;
+	}
+}
+
+@keyframes slide-from-right {
+	from {
+		margin-left: 100%;
+	}
+
+	to {
+		margin-right: 0%;
+	}
+}
+
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;

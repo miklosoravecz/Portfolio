@@ -316,7 +316,6 @@ body {
 
 	.footer-copyright {
 		font-size: 0.7rem;
-	
 	}
 
 	.footer-right {
@@ -324,7 +323,7 @@ body {
 		justify-content: space-evenly;
 	}
 
-	.footer-href {
+	.footer-href, .carousel-href {
 		display: flex;
 		position: relative;
 		flex-direction: row;
@@ -334,9 +333,7 @@ body {
 		color: $primary-color;
 	}
 
-
-
-	.footer-href:hover {
+	.footer-href:hover, .carousel-href:hover {
 		color: $secondary-color;
 	}
 
@@ -344,7 +341,11 @@ body {
 		fill: $secondary-color;
 	}
 
-	.footer-href:active {
+	.carousel-href:hover svg {
+		fill: $secondary-color;
+	}
+
+	.footer-href:active, .carousel-href:active {
 		transform: scale(1.1);
 	}
 
@@ -372,17 +373,42 @@ body {
 	}
 
 	.carousel {
-		padding: 10%;
-	}
-
-	.carousel-block-img-wrapper {
-		width:50%;
-	}
-
-	.carousel-block-img {
-		object-fit: contain;
+		background-image: url( '../svg/blogzone.svg');
+		background-repeat: no-repeat;
+		position: absolute;
 		width: 100%;
 		height: 100%;
+	}
+
+	.carousel-block {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(0deg, rgba(30,30,30,1) 15%, rgba(30,30,30,0.1) 40%);
+	}
+
+	.carousel-wrapper-date {
+		color: $primary-color;
+		margin-bottom: 0;
+	}
+
+	.carousel-wrapper-title {
+		color: $primary-color;
+		margin: 0;
+	}
+
+	.carousel-wrapper-info {
+		color: $secondary-color;
+		margin-top: 0;
+	}
+
+	.carousel-wrapper-text {
+		color: $primary-color;
+	}
+
+	.carousel-svg {
+		fill: $primary-color;
 	}
 
 @import "media";

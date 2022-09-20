@@ -151,6 +151,50 @@
 			top: -1.3rem;
 		}
 	}
+
+	.carousel {
+		background-size: 100%;
+		background-position-y: 15%;
+	}
+
+	.carousel-block {
+		background: linear-gradient(0deg, rgba(30,30,30,1) 44%, rgba(30,30,30,0.1) 80%);
+	}
+
+	.carousel-space {
+		flex-basis: 50%;
+	}
+
+	.carousel-wrapper {
+		flex-basis: 50%;
+		padding: 8%;
+	}
+
+	.carousel-wrapper-date {
+		font-size: 0.6rem;
+	}
+
+	.carousel-wrapper-title {
+		font-size: 1.3rem;
+	}
+
+	.carousel-wrapper-info {
+		font-size: 1rem;
+	
+	}
+
+	.carousel-wrapper-text {
+		font-size: 0.6rem;
+	}
+
+	.carousel-href {
+		font-size: 1rem;
+	}
+
+	.carousel-svg {
+		width: 28px;
+		height: 28px;
+	}
 }
 
 //medium screen
@@ -270,6 +314,50 @@
 			left: -9rem;
 		}
 	}
+
+	.carousel {
+		background-size: 100%;
+		background-position-y: 25%;
+	}
+
+	.carousel-block {
+		background: linear-gradient(0deg, rgba(30,30,30,1) 25%, rgba(30,30,30,0.1) 60%);
+	}
+
+	.carousel-space {
+		flex-basis: 65%;
+	}
+
+	.carousel-wrapper {
+		flex-basis: 35%;
+		padding: 5%;
+	}
+
+	.carousel-wrapper-date {
+		font-size: 0.8rem;
+	}
+
+	.carousel-wrapper-title {
+		font-size: 2rem;
+	}
+
+	.carousel-wrapper-info {
+		font-size: 1.2rem;
+	
+	}
+
+	.carousel-wrapper-text {
+		font-size: 0.8rem;
+	}
+
+	.carousel-href {
+		font-size: 1rem;
+	}
+
+	.carousel-svg {
+		width: 28px;
+		height: 28px;
+	}
 }
 
 //large screen
@@ -385,5 +473,48 @@
 			top: 0rem;
 			left: -9rem;
 		}
+	}
+
+	.carousel {
+		background-size: cover;
+	}
+
+	.carousel-block {
+		background: linear-gradient(0deg, rgba(30,30,30,1) 15%, rgba(30,30,30,0.1) 40%);
+	}
+
+	.carousel-space {
+		flex-basis: 70%;
+	}
+
+	.carousel-wrapper {
+		flex-basis: 30%;
+		padding: 5%;
+	}
+
+	.carousel-wrapper-date {
+		font-size: 1rem;
+	}
+
+	.carousel-wrapper-title {
+		font-size: 2rem;
+	}
+
+	.carousel-wrapper-info {
+		font-size: 1.2rem;
+	
+	}
+
+	.carousel-wrapper-text {
+		font-size: 1rem;
+	}
+
+	.carousel-href {
+		font-size: 1.2rem;
+	}
+
+	.carousel-svg {
+		width: 36px;
+		height: 36px;
 	}
 }

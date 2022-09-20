@@ -348,11 +348,6 @@ body {
   height: 100%;
   background: linear-gradient(0deg, #1e1e1e 15%, rgba(30, 30, 30, 0.1) 40%); }
 
-.carousel-wrapper-date, .carousel-wrapper-title, .carousel-wrapper-info, .carousel-wrapper-text {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start; }
-
 .carousel-wrapper-date {
   color: #fefeff;
   margin-bottom: 0; }
@@ -368,13 +363,14 @@ body {
 .carousel-wrapper-text {
   color: #fefeff; }
 
+.carousel-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem; }
+
 .carousel-href {
   display: flex;
-  position: relative;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
+  width: auto;
   color: #fefeff; }
 
 .carousel-svg {
@@ -382,16 +378,16 @@ body {
 
 .carousel-left-caret, .carousel-right-caret {
   color: #fefeff;
-  font-size: 3rem;
+  font-size: 2.8rem;
   position: absolute;
-  top: 85%;
+  top: 50%;
   cursor: pointer; }
 
 .carousel-left-caret {
-  left: 0.5rem; }
+  left: 0.3rem; }
 
 .carousel-right-caret {
-  right: 0.5rem; }
+  right: 0.3rem; }
 
 @media screen and (max-width: 800px) {
   .navbar-menu {
@@ -505,7 +501,9 @@ body {
     font-size: 1rem; }
   .carousel-svg {
     width: 28px;
-    height: 28px; } }
+    height: 28px; }
+  .carousel-left-caret, .carousel-right-caret {
+    top: 85%; } }
 
 @media screen and (min-width: 801px) and (max-width: 1280px) {
   .navbar {

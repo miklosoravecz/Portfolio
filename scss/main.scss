@@ -388,12 +388,6 @@ body {
 		background: linear-gradient(0deg, rgba(30,30,30,1) 15%, rgba(30,30,30,0.1) 40%);
 	}
 
-	.carousel-wrapper-date, .carousel-wrapper-title, .carousel-wrapper-info, .carousel-wrapper-text {
-		display: flex;
-		flex-direction: row;
-		justify-content: flex-start;
-	}
-
 	.carousel-wrapper-date {
 		color: $primary-color;
 		margin-bottom: 0;
@@ -413,13 +407,15 @@ body {
 		color: $primary-color;
 	}
 
+	.carousel-link {
+		display: flex;
+		justify-content: center;
+		margin-top: 2rem;
+	}
+
 	.carousel-href {
 		display: flex;
-		position: relative;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-		cursor: pointer;
+		width: auto;
 		color: $primary-color;
 	}
 
@@ -429,17 +425,18 @@ body {
 
 	.carousel-left-caret, .carousel-right-caret {
 		color: $primary-color;
-		font-size: 3rem;
+		font-size: 2.8rem;
 		position: absolute;
-		top: 85%;
+		top: 50%;
 		cursor: pointer;
 	}
+
 	.carousel-left-caret {
-		left: 0.5rem;
+		left: 0.3rem;
 	}
 
 	.carousel-right-caret {
-		right: 0.5rem;
+		right: 0.3rem;
 	}
 
 @import "media";

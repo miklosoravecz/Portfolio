@@ -323,7 +323,7 @@ body {
 		justify-content: space-evenly;
 	}
 
-	.footer-href, .carousel-href {
+	.footer-href {
 		display: flex;
 		position: relative;
 		flex-direction: row;
@@ -333,7 +333,7 @@ body {
 		color: $primary-color;
 	}
 
-	.footer-href:hover, .carousel-href:hover {
+	.footer-href:hover, .carousel-href:hover, .carousel-left-caret:hover, .carousel-right-caret:hover {
 		color: $secondary-color;
 	}
 
@@ -345,7 +345,7 @@ body {
 		fill: $secondary-color;
 	}
 
-	.footer-href:active, .carousel-href:active {
+	.footer-href:active, .carousel-href:active, .carousel-left-caret:active, .carousel-right-caret:active {
 		transform: scale(1.1);
 	}
 
@@ -388,6 +388,12 @@ body {
 		background: linear-gradient(0deg, rgba(30,30,30,1) 15%, rgba(30,30,30,0.1) 40%);
 	}
 
+	.carousel-wrapper-date, .carousel-wrapper-title, .carousel-wrapper-info, .carousel-wrapper-text {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+	}
+
 	.carousel-wrapper-date {
 		color: $primary-color;
 		margin-bottom: 0;
@@ -407,8 +413,33 @@ body {
 		color: $primary-color;
 	}
 
+	.carousel-href {
+		display: flex;
+		position: relative;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		color: $primary-color;
+	}
+
 	.carousel-svg {
 		fill: $primary-color;
+	}
+
+	.carousel-left-caret, .carousel-right-caret {
+		color: $primary-color;
+		font-size: 3rem;
+		position: absolute;
+		top: 85%;
+		cursor: pointer;
+	}
+	.carousel-left-caret {
+		left: 0.5rem;
+	}
+
+	.carousel-right-caret {
+		right: 0.5rem;
 	}
 
 @import "media";

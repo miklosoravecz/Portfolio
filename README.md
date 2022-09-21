@@ -2,7 +2,7 @@
 
 ## Open project
 
-- Open folder and run ###npm run sass### for compiling the styles.
+- Open folder and run **npm run sass** for compiling the styles.
 - Open index.html, use live server to see changes
 
 ### Deployed project

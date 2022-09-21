@@ -18,5 +18,5 @@ Carousel
 ![Alt text](https://github.com/miklosoravecz/todoApp/blob/main/src/screenshots/1.jpg "Main page")
 
 Menu
-![Alt text](https://github.com/miklosoravecz/todoApp/blob/main/src/screenshots/2.jpg "Add todo")
+![Alt text](https://github.com/miklosoravecz/Portfolio/blob/main/src/screenshots/portfolio.jpg "menu")
 

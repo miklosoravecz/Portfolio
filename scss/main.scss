@@ -433,7 +433,6 @@ body {
 	.carousel-link {
 		display: flex;
 		justify-content: center;
-		margin-top: 1rem;
 	}
 
 	.carousel-href {
@@ -443,6 +442,10 @@ body {
 	}
 
 	.carousel-svg {
+		fill: $primary-color;
+	}
+
+	.carousel-website-svg {
 		fill: $primary-color;
 	}
 

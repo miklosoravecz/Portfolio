@@ -394,8 +394,7 @@ body {
 
 .carousel-link {
   display: flex;
-  justify-content: center;
-  margin-top: 1rem; }
+  justify-content: center; }
 
 .carousel-href {
   display: flex;
@@ -403,6 +402,9 @@ body {
   color: #fefeff; }
 
 .carousel-svg {
+  fill: #fefeff; }
+
+.carousel-website-svg {
   fill: #fefeff; }
 
 .carousel-left-caret, .carousel-right-caret {
@@ -539,14 +541,15 @@ body {
     top: -1.3rem; }
   .carousel {
     background-size: 100%;
-    background-position-y: 15%; }
+    background-position-y: 15vw; }
   .carousel-block {
     background: linear-gradient(0deg, #1e1e1e 44%, rgba(30, 30, 30, 0.1) 80%); }
   .carousel-space {
-    flex-basis: 50%; }
+    flex-basis: 45%; }
   .carousel-wrapper {
-    flex-basis: 50%;
-    padding: 8%; }
+    flex-basis: 55%;
+    padding: 8%;
+    margin-top: -10vw; }
   .carousel-wrapper-date {
     font-size: 0.6rem; }
   .carousel-wrapper-title {
@@ -555,9 +558,13 @@ body {
     font-size: 1rem; }
   .carousel-wrapper-text {
     font-size: 0.6rem; }
+  .carousel-link-github {
+    margin-top: 1.5rem; }
+  .carousel-link-website {
+    margin-top: 1rem; }
   .carousel-href {
     font-size: 1rem; }
-  .carousel-svg {
+  .carousel-svg, .carousel-website-svg {
     width: 28px;
     height: 28px; }
   .carousel-left-caret, .carousel-right-caret {
@@ -635,14 +642,15 @@ body {
     left: -9rem; }
   .carousel {
     background-size: 100%;
-    background-position-y: 25%; }
+    background-position-y: 7vh; }
   .carousel-block {
-    background: linear-gradient(0deg, #1e1e1e 25%, rgba(30, 30, 30, 0.1) 60%); }
+    background: linear-gradient(0deg, #1e1e1e 15%, rgba(30, 30, 30, 0.1) 85%); }
   .carousel-space {
     flex-basis: 65%; }
   .carousel-wrapper {
     flex-basis: 35%;
-    padding: 5%; }
+    padding: 5%;
+    margin-top: -8rem; }
   .carousel-wrapper-date {
     font-size: 0.8rem; }
   .carousel-wrapper-title {
@@ -651,11 +659,15 @@ body {
     font-size: 1.2rem; }
   .carousel-wrapper-text {
     font-size: 0.8rem; }
+  .carousel-link {
+    margin-top: 2rem; }
   .carousel-href {
     font-size: 1rem; }
-  .carousel-svg {
+  .carousel-svg, .carousel-website-svg {
     width: 28px;
-    height: 28px; } }
+    height: 28px; }
+  .carousel-link-website {
+    margin-bottom: 1rem; } }
 
 @media screen and (min-width: 1281px) {
   .navbar {
@@ -721,14 +733,16 @@ body {
     top: 0rem;
     left: -9rem; }
   .carousel {
-    background-size: cover; }
+    background-size: 70vw;
+    background-position: top; }
   .carousel-block {
-    background: linear-gradient(0deg, #1e1e1e 15%, rgba(30, 30, 30, 0.1) 40%); }
+    background: linear-gradient(0deg, #1e1e1e 25%, rgba(30, 30, 30, 0.1) 50%); }
   .carousel-space {
-    flex-basis: 70%; }
+    flex-basis: 60%; }
   .carousel-wrapper {
-    flex-basis: 30%;
-    padding: 5%; }
+    flex-basis: 40%;
+    padding: 5%;
+    margin-top: -8rem; }
   .carousel-wrapper-date {
     font-size: 1rem; }
   .carousel-wrapper-title {
@@ -737,8 +751,12 @@ body {
     font-size: 1.2rem; }
   .carousel-wrapper-text {
     font-size: 1rem; }
+  .carousel-link-github {
+    margin-top: 5vh; }
+  .carousel-link-website {
+    margin-top: 1.5rem; }
   .carousel-href {
     font-size: 1.2rem; }
-  .carousel-svg {
+  .carousel-svg, .carousel-website-svg {
     width: 36px;
     height: 36px; } }

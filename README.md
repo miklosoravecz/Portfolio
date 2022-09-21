@@ -1,5 +1,22 @@
-# Portfolio
+# Portfolio 2022
 
-### Visual CV 2022
+## Open project
 
-_Html, Css, Sass_
+- Open folder and run npm run sass for compileing the styles.
+- Open index.html, use live server to see changes
+
+### Deployed project
+
+https://
+
+### The project contains
+
+- HTML, Css, Sass, JavaScript, EsLint, svg-css animations, responsive styles
+
+### Screenshots
+Carousel
+![Alt text](https://github.com/miklosoravecz/todoApp/blob/main/src/screenshots/1.jpg "Main page")
+
+Menu
+![Alt text](https://github.com/miklosoravecz/todoApp/blob/main/src/screenshots/2.jpg "Add todo")
+

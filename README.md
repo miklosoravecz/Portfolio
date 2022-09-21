@@ -15,7 +15,7 @@ https://
 
 ### Screenshots
 Carousel
-![Alt text](https://github.com/miklosoravecz/todoApp/blob/main/src/screenshots/1.jpg "Main page")
+![Alt text](https://github.com/miklosoravecz/Portfolio/blob/main/src/screenshots/portfolio1.jpg "carousel")
 
 Menu
 ![Alt text](https://github.com/miklosoravecz/Portfolio/blob/main/src/screenshots/portfolio.jpg "menu")

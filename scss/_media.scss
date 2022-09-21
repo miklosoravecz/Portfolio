@@ -215,6 +215,15 @@
 		width: 25px;
 		margin: 0 15px;
 	}
+
+	.section3 {
+		flex-direction: column;
+		height: 45vh;
+	}
+
+	.section3-right {
+		display: none;
+	}
 }
 
 //medium screen
@@ -387,6 +396,27 @@
 	.carousel-link-website {
 		margin-bottom: 1rem;
 	}
+
+	.section3 {
+		flex-direction: row;
+	} 
+
+	.section3-right {
+		display: initial;
+	}
+
+	.section3-subtitle {
+		font-size: 1.2rem;
+	}
+
+	.section3-title {
+		font-size: 2rem;
+	}
+
+	.section3-text {
+		font-size: 0.8rem;
+		text-align: left;
+	}
 }
 
 //large screen
@@ -553,6 +583,36 @@
 	}
 
 	.carousel-svg, .carousel-website-svg {
+		width: 36px;
+		height: 36px;
+	}
+
+	.section3 {
+		flex-direction: row;
+	} 
+
+	.section3-right {
+		display: initial;
+	}
+
+	.section3-subtitle {
+		font-size: 1.2rem;
+	}
+
+	.section3-title {
+		font-size: 2rem;
+	}
+
+	.section3-text {	
+		font-size: 1rem;
+		text-align: left;
+	}
+
+	.section3-link {
+		font-size: 1.2rem;
+	}
+
+	.section3-svg {
 		width: 36px;
 		height: 36px;
 	}

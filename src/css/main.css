@@ -722,6 +722,8 @@ body {
     z-index: 10; }
     .shadow-svg.animation {
       opacity: 0; }
+  .section-skills-svg {
+    height: 80px; }
   .footer {
     min-height: 12rem;
     height: 25vw; }

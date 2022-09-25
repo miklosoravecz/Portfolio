@@ -115,9 +115,7 @@
 	}
 
 	.section-skills-svg {
-		
 		height: 40px;
-	
 	}
 
 	.footer {
@@ -324,6 +322,10 @@
 			&.animation {
 				opacity: 0;
 			}
+	}
+
+	.section-skills-svg {
+		height: 80px;
 	}
 
 	.footer {

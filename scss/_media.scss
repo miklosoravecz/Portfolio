@@ -46,11 +46,6 @@
 		font-size: 7vw;
 	}
 
-	.banner-svg {
-		width: 20vw;
-		height: 20vw;
-	}
-
 	.banner-projects-button {
 		font-size: 9vw;
 	}
@@ -117,6 +112,12 @@
 			&.animation {
 				opacity: 0;
 			}
+	}
+
+	.section-skills-svg {
+		
+		height: 40px;
+	
 	}
 
 	.footer {
@@ -254,11 +255,6 @@
 
 	.banner-text {
 		font-size: 4vw;
-	}
-
-	.banner-svg {
-		width: 15vw;
-		height: 15vw;
 	}
 
 	.banner-projects-button {
@@ -446,11 +442,6 @@
 
 	.banner-text {
 		font-size: 4vw;
-	}
-
-	.banner-svg {
-		width: 8vw;
-		height: 8vw;
 	}
 
 	.banner-projects-button {

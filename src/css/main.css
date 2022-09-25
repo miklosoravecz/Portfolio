@@ -202,9 +202,6 @@ body {
   color: #fefeff;
   margin: 1rem; }
 
-.banner-svg:hover {
-  animation: svg-move 2s infinite; }
-
 .banner-button-container {
   display: flex;
   justify-content: center;
@@ -267,6 +264,22 @@ body {
   color: #fefeff;
   padding-left: 2rem;
   padding-right: 2rem; }
+
+.section-skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem; }
+
+.section-skills-svg {
+  width: auto;
+  height: 100px;
+  margin: 1rem; }
+
+.express {
+  margin-bottom: -1rem; }
 
 .intersection {
   display: flex;
@@ -552,9 +565,6 @@ body {
       top: 0; }
   .banner-text {
     font-size: 7vw; }
-  .banner-svg {
-    width: 20vw;
-    height: 20vw; }
   .banner-projects-button {
     font-size: 9vw; }
   .section1 {
@@ -597,6 +607,8 @@ body {
     z-index: 10; }
     .shadow-svg.animation {
       opacity: 0; }
+  .section-skills-svg {
+    height: 40px; }
   .footer {
     min-height: 367px;
     height: 55vw; }
@@ -669,9 +681,6 @@ body {
     display: none; }
   .banner-text {
     font-size: 4vw; }
-  .banner-svg {
-    width: 15vw;
-    height: 15vw; }
   .banner-projects-button {
     font-size: 5vw; }
   .section1 {
@@ -773,9 +782,6 @@ body {
     display: none; }
   .banner-text {
     font-size: 4vw; }
-  .banner-svg {
-    width: 8vw;
-    height: 8vw; }
   .banner-projects-button {
     font-size: 5vw; }
   .section1 {

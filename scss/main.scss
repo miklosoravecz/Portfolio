@@ -187,10 +187,6 @@ body {
 		margin: 1rem;
 	}
 
-	.banner-svg:hover {
-		animation: svg-move 2s infinite;
-	}
-
 	.banner-button-container {
 		display: flex;
 		justify-content: center;
@@ -267,6 +263,25 @@ body {
 		padding-right: 2rem;
 	}
 
+	.section-skills {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		padding-top: 1rem;
+	}
+
+	.section-skills-svg {
+		width: auto;
+		height: 100px;
+		margin: 1rem;
+	}
+
+	.express {
+		margin-bottom: -1rem;
+	}
+	
 	.intersection {
 		display: flex;
 		justify-content: center;

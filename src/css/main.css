@@ -108,7 +108,7 @@ body {
 .navbar-brand:active, .footer-brand:active {
   transform: scale(1.1); }
 
-.navbar-img, .footer-img {
+.navbar-svg, .footer-svg {
   width: 50px;
   height: 50px;
   fill: #fefeff; }
@@ -331,7 +331,8 @@ body {
 
 .footer-title {
   color: #fefeff;
-  font-size: 2.5rem; }
+  font-size: 2.5rem;
+  margin-bottom: 1rem; }
 
 .footer-copyright {
   font-size: 0.7rem; }
@@ -363,11 +364,6 @@ body {
 
 .footer-href:active, .carousel-href:active, .carousel-left-caret:active, .carousel-right-caret:active, .section3-href:active {
   transform: scale(1.1); }
-
-.footer-svg {
-  fill: #fefeff;
-  width: 28px;
-  height: 28px; }
 
 .footer-copy-popup {
   display: none;
@@ -581,6 +577,9 @@ body {
     display: flex; }
   .navbar-brand {
     animation: menu-brand-downsize cubic-bezier(0.075, 0.82, 0.165, 1) 0.65s; }
+  .navbar-svg {
+    width: 36px;
+    height: 36px; }
   .overlay {
     top: -100vh;
     -webkit-transition: top 0.65s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -636,17 +635,19 @@ body {
   .footer {
     min-height: 367px;
     height: 55vw; }
+  .footer-left {
+    flex-basis: 30%; }
+  .footer-right {
+    flex-basis: 70%; }
   .footer-content {
     flex-direction: column; }
   .footer-title {
-    font-size: 2rem; }
+    font-size: 1.5rem; }
   .footer-brand {
     font-size: 1.5rem; }
-  .footer-img {
-    width: 32px;
-    height: 29px;
-    margin-top: -1px;
-    margin-right: 0.1rem; }
+  .footer-svg {
+    width: 36px;
+    height: 36px; }
   .footer-copy-popup.show-message {
     top: -1.3rem; }
   .carousel {
@@ -687,7 +688,7 @@ body {
     margin: 0 15px; }
   .section3 {
     flex-direction: column;
-    height: 45vh; }
+    height: 50vh; }
   .section3-right {
     display: none; } }
 
@@ -696,7 +697,7 @@ body {
     height: 4rem; }
   .navbar-brand {
     font-size: 2rem; }
-  .navbar-img {
+  .navbar-svg {
     width: 40px;
     height: 40px; }
   .navbar-burger {
@@ -799,7 +800,7 @@ body {
     height: 4rem; }
   .navbar-brand {
     font-size: 2rem; }
-  .navbar-img {
+  .navbar-svg {
     width: 50px;
     height: 50px; }
   .navbar-burger {

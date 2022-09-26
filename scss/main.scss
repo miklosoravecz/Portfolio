@@ -48,7 +48,7 @@ body {
 		transform: scale(1.1)
 	}
 
-	.navbar-img, .footer-img {
+	.navbar-svg, .footer-svg {
 		width: 50px;
 		height: 50px;
 		fill: $primary-color;
@@ -319,6 +319,7 @@ body {
 	.footer-title {
 		color: $primary-color;
 		font-size: 2.5rem;
+		margin-bottom: 1rem;
 	}
 
 	.footer-copyright {
@@ -358,12 +359,6 @@ body {
 
 	.footer-href:active, .carousel-href:active, .carousel-left-caret:active, .carousel-right-caret:active, .section3-href:active {
 		transform: scale(1.1);
-	}
-
-	.footer-svg {
-		fill: $primary-color;
-		width: 28px;
-		height: 28px;
 	}
 
 	.footer-copy-popup {

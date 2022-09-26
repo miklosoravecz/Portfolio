@@ -304,6 +304,9 @@ body {
   height: 25vh;
   font-size: larger; }
 
+.section-projects {
+  background-color: #1e1e1e; }
+
 .footer {
   display: flex;
   flex-direction: column;

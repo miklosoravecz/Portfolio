@@ -15,8 +15,8 @@ https://miklos-portfolio.netlify.app/
 
 ### Screenshots
 
-![Alt text](https://github.com/miklosoravecz/Portfolio/blob/main/src/screenshots/portfolio1.jpg "carousel")
+![Alt text](https://github.com/miklosoravecz/Portfolio/blob/main/src/screenshots/portfloio.png "carousel")
 
 
-![Alt text](https://github.com/miklosoravecz/Portfolio/blob/main/src/screenshots/portfolio.jpg "menu")
+![Alt text](https://github.com/miklosoravecz/Portfolio/blob/main/src/screenshots/portfolio2.png "menu")
 

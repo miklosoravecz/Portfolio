@@ -513,6 +513,18 @@ body {
 		animation: slide-from-right cubic-bezier(0.075, 0.82, 0.165, 1) 0.65s;
 	}
 
+	.slide-to-left {
+		animation: slide-to-left cubic-bezier(0.075, 0.82, 0.165, 1) 0.65s;
+	}
+
+	.slide-to-right {
+		animation: slide-to-right cubic-bezier(0.075, 0.82, 0.165, 1) 0.65s;
+	}
+
+	.navigation-fade-in {
+		animation: navigation-fade-in  0.65s;
+	}
+
 	.section3 {
 		display: flex;
 		background-color: $darken-light;
@@ -528,7 +540,6 @@ body {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-	
 	}
 
 	.section3-content-wrapper {

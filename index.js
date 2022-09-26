@@ -78,11 +78,35 @@ const hideAllSlides = () => {
 		slide.classList.remove('carousel-item-visible')
 		slide.classList.remove('slide-from-left')
 		slide.classList.remove('slide-from-right')
+		slide.classList.remove('slide-to-left')
+		slide.classList.remove('slide-to-right')
+		slide.classList.remove('navigation-fade-in')
 		slide.classList.add('carousel-item-hidden')
 	}
 }
 
-const handleMoveToNextSlide = () => {
+const handleSlideOutToLeft = () => {
+	slides[position].classList.remove('navigation-fade-in')
+	slides[position].classList.add('slide-to-left')
+	return new Promise(resolve=> {
+		setTimeout(() => {
+			resolve('resolved')
+		}, 400)
+	})
+}
+
+const handleSlideOutToRight = () => {
+	slides[position].classList.remove('navigation-fade-in')
+	slides[position].classList.add('slide-to-right')
+	return new Promise(resolve=> {
+		setTimeout(() => {
+			resolve('resolved')
+		}, 400)
+	})
+}
+
+const handleMoveToNextSlide = async () => {
+	await handleSlideOutToLeft()
 	hideAllSlides()
 	if (position === numberOfSlides - 1) {
 		position = 0
@@ -95,7 +119,8 @@ const handleMoveToNextSlide = () => {
 	dots[position].classList.add('active')
 }
 
-const handleMoveToPrevSlide = () => {
+const handleMoveToPrevSlide = async () => {
+	await handleSlideOutToRight()
 	hideAllSlides()
 	if (position === 0) {
 		position = numberOfSlides - 1
@@ -113,8 +138,9 @@ const navigateToSlide = (event) => {
 	removeActiveClassFromDots()
 	let positionNum = parseInt(event.srcElement.id)
 	position = positionNum
+	slides[position].classList.remove('carousel-item-hidden')
 	slides[position].classList.add('carousel-item-visible')
-	slides[position].classList.add('slide-from-left')
+	slides[position].classList.add('navigation-fade-in')
 	dots[position].classList.add('active')
 }
 

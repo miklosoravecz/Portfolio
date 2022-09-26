@@ -53,7 +53,37 @@ $primary-font: 'Spline Sans', sans-serif;
 	}
 
 	to {
-		margin-right: 0%;
+		margin-left: 0%;
+	}
+}
+
+@keyframes slide-to-left {
+	from {
+		margin-left: 0%;
+	}
+
+	to {
+		margin-left: -100%;
+	}
+}
+
+@keyframes slide-to-right {
+	from {
+		margin-left: 0%;
+	}
+
+	to {
+		margin-left: 100%;
+	}
+}
+
+@keyframes navigation-fade-in {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
 	}
 }
 

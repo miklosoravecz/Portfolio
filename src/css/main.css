@@ -20,7 +20,25 @@
   from {
     margin-left: 100%; }
   to {
-    margin-right: 0%; } }
+    margin-left: 0%; } }
+
+@keyframes slide-to-left {
+  from {
+    margin-left: 0%; }
+  to {
+    margin-left: -100%; } }
+
+@keyframes slide-to-right {
+  from {
+    margin-left: 0%; }
+  to {
+    margin-left: 100%; } }
+
+@keyframes navigation-fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 @keyframes gradient {
   0% {
@@ -466,6 +484,15 @@ body {
 
 .slide-from-right {
   animation: slide-from-right cubic-bezier(0.075, 0.82, 0.165, 1) 0.65s; }
+
+.slide-to-left {
+  animation: slide-to-left cubic-bezier(0.075, 0.82, 0.165, 1) 0.65s; }
+
+.slide-to-right {
+  animation: slide-to-right cubic-bezier(0.075, 0.82, 0.165, 1) 0.65s; }
+
+.navigation-fade-in {
+  animation: navigation-fade-in  0.65s; }
 
 .section3 {
   display: flex;

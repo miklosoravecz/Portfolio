@@ -635,6 +635,8 @@ body {
       opacity: 0; }
   .section-skills-svg {
     height: 40px; }
+  .express {
+    margin-bottom: 0; }
   .footer {
     min-height: 367px;
     height: 55vw; }

@@ -45,7 +45,12 @@ const toggleMenu = () => {
 }
 
 const closeMenu = () => {
-	toggleMenu()
+	burgerButton.classList.remove('close')
+	navbarMenu.classList.remove('show')
+	overlay.classList.remove('show')
+	menuItems.forEach((item) => item.classList.remove('show'))
+	burgerLines.forEach((item) => item.classList.remove('show'))
+	burgerMenuOpened = false
 }
 
 const toggleNavBlur = () => {

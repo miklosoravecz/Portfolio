@@ -7,7 +7,7 @@
 
 ### Deployed project
 
-https://miklos-portfolio.netlify.app/
+https://miklosoravecz.netlify.app/
 
 ### The project contains
 

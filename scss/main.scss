@@ -85,6 +85,7 @@ body {
 		justify-content: right;
 		width:100%;
 		margin-right: 8%;
+		display: none;
 	}
 
 	.navbar-burger-button {
@@ -148,6 +149,7 @@ body {
 		background-color: $background-color;
 		opacity: 0.85;
 		z-index: 3;
+		display: none;
 	}
 
 	.banner {
@@ -229,6 +231,54 @@ body {
 		}
 	}
 
+	.outer-circle-svg {
+		transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+		transition-delay: 0.25s;
+		min-width: 0;
+		max-width: 0;
+
+		&.animation {
+			min-width: 250px;
+			max-width: 44%;
+		}
+	}
+
+	.smaller-circle-svg {
+		transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+		transition-delay: 0.25s;
+		min-width: 500px;
+		max-width: 55%;
+		opacity: 0;
+		
+		&.animation {
+			min-width: 250px;
+			max-width: 45%;
+			opacity: 1;
+		}
+	}
+
+	.portrait-svg {
+		min-width: 250px;
+		max-width: 44%;
+		opacity: 0;
+		transition: opacity 0.65s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+		&.animation {
+			opacity: 1;
+		}
+	}
+
+	.shadow-svg {
+		opacity: 1;
+		transition: opacity 0.65s cubic-bezier(0.075, 0.82, 0.165, 1);
+		max-width: 88%;
+		z-index: 10;
+
+			&.animation {
+				opacity: 0;
+			}
+	}
+	
 	.section1-right {
 		display: flex;
 		flex-direction: column;
@@ -270,7 +320,7 @@ body {
 
 	.section-skills-svg {
 		width: auto;
-		height: 100px;
+		height: 60px;
 		margin: 1rem;
 	}
 
@@ -413,31 +463,63 @@ body {
 		background-image: url( '../svg/todo.svg');
 	}
 
+	.carousel {
+		background-size: 70vw;
+		background-position: top;
+	}
+
 	.carousel-block {
 		display: flex;
 		flex-direction: column;
 		width: 100%;
 		height: 100%;
-		background: linear-gradient(0deg, rgba(30,30,30,1) 15%, rgba(30,30,30,0.1) 40%);
+		background: linear-gradient(0deg, rgba(30,30,30,1) 45%, rgba(30,30,30,0.1) 65%);
+	}
+
+	.carousel-space {
+		flex-basis: 60%;
+	}
+
+	.carousel-wrapper {
+		flex-basis: 40%;
+		padding: 5%;
+		margin-top: -8rem;
 	}
 
 	.carousel-wrapper-date {
 		color: $primary-color;
 		margin-bottom: 0;
+		font-size: 1rem;
 	}
 
 	.carousel-wrapper-title {
 		color: $primary-color;
 		margin: 0;
+		font-size: 2rem;
 	}
 
 	.carousel-wrapper-info {
 		color: $secondary-color;
 		margin-top: 0;
+		font-size: 1.2rem;
 	}
 
 	.carousel-wrapper-text {
 		color: $primary-color;
+		font-size: 1rem;
+	}
+
+	.carousel-link-github {
+		margin-top: 5vh;
+	}
+
+	.carousel-link-website {
+		margin-top: 1.5rem;
+	}
+
+	.carousel-svg, .carousel-website-svg {
+		width: 36px;
+		height: 36px;
 	}
 
 	.carousel-link {
@@ -449,6 +531,7 @@ body {
 		display: flex;
 		width: auto;
 		color: $primary-color;
+		font-size: 1.2rem;
 	}
 
 	.carousel-svg {
@@ -618,6 +701,5 @@ body {
 		width: 30vw;
 		height:30vw;
 	}
-
 
 @import "media";

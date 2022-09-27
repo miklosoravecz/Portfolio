@@ -1,7 +1,13 @@
 //responsiveness
 
+@mixin wideScreen {
+	@media screen and (max-height: 515px) and (max-width: 800px) and (orientation: landscape) {
+		@content;
+	}
+}
+
 @mixin mediaSmall {
-	@media screen and (max-width: 800px) {
+	@media screen and (max-width: 800px) and (orientation: portrait) {
 		@content;
 	}
 }

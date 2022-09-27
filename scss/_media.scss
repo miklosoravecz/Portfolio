@@ -1,7 +1,6 @@
-//small screen
+//wide screen
 
-@include mediaSmall {
-
+@include wideScreen {
 	.navbar-menu {
 		flex-direction: column;
 		align-items: flex-end;
@@ -38,6 +37,215 @@
 	}
 
 	.overlay {
+		display: initial;
+		top: -100vh;
+		-webkit-transition: top 0.65s cubic-bezier(0.075, 0.82, 0.165, 1);
+		transition: top 0.65s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+		&.show {
+			top:0;
+		}
+	}
+
+	.section1-title {
+		font-size: 1rem;
+	}
+
+	.section1-subtitle {
+		font-size: 1.6rem;
+	}
+
+	.outer-circle-svg {
+		transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+		transition-delay: 0.25s;
+		min-width: 0;
+		max-width: 0;
+
+		&.animation {
+			max-width: 35%;
+		}
+	}
+
+	.smaller-circle-svg {
+		min-width: 300px;
+		max-width: 55%;
+		
+		&.animation {
+			max-width: 35%;
+		}
+	}
+
+	.portrait-svg {
+		max-width: 35%;
+	}
+
+	.shadow-svg {
+		min-width: 250px;
+		max-width: 35%;
+	}
+
+	.section-skills-svg {
+		height: 40px;
+	}
+
+	.express {
+		margin-bottom: 0;
+	}
+
+	.footer {
+		min-height: 367px;
+		height: 55vw;
+	}
+
+	.footer-left {
+		flex-basis: 30%;
+	}
+
+	.footer-right {
+		flex-basis: 70%;
+	}
+
+	.footer-content {
+		flex-direction: column;
+	}
+
+	.footer-title {
+		font-size: 1.5rem;
+	}
+
+	.footer-brand {
+		font-size: 1.5rem;
+	}
+
+	.footer-svg {
+		width: 36px;
+		height: 36px;
+	}
+	
+	.footer-copy-popup {
+
+		&.show-message {
+			top: -1.3rem;
+		}
+	}
+
+	.carousel {
+		background-size: 100%;
+		background-position-y: -7vw;
+	}
+
+	.carousel-block {
+		background: linear-gradient(0deg, rgba(30,30,30,1) 44%, rgba(30,30,30,0.1) 80%);
+	}
+
+	.carousel-space {
+		flex-basis: 45%;
+	}
+
+	.carousel-wrapper {
+		flex-basis: 55%;
+		padding: 8%;
+		margin-top: -10vw;
+	}
+
+	.carousel-wrapper-date {
+		font-size: 0.6rem;
+	}
+
+	.carousel-wrapper-title {
+		font-size: 1.3rem;
+	}
+
+	.carousel-wrapper-info {
+		font-size: 1rem;
+	}
+
+	.carousel-wrapper-text {
+		font-size: 0.6rem;
+	}
+
+	.carousel-link-github {
+		margin-top: 1.5rem;
+	}
+
+	.carousel-link-website {
+		margin-top: 1rem;
+	}
+
+	.carousel-href {
+		font-size: 1rem;
+	}
+
+	.carousel-svg, .carousel-website-svg {
+		width: 28px;
+		height: 28px;
+	}
+
+	.carousel-left-caret, .carousel-right-caret {
+		top: 82%;
+	}
+
+	.carousel-dots {
+		top: 89%;
+	}
+
+	.carousel-dot {
+		height: 25px;
+		width: 25px;
+		margin: 0 15px;
+	}
+
+	.section3 {
+		flex-direction: column;
+		height: 86vh;
+	}
+
+	.section3-right {
+		display: none;
+	}
+}
+
+//small screen
+
+@include mediaSmall {
+
+	.navbar-menu {
+		flex-direction: column;
+		align-items: flex-end;
+		position: fixed;
+		height: 168px;
+		top: -200px;
+		-webkit-transition: top 0.65s cubic-bezier(0.075, 0.82, 0.165, 1);
+		transition: top 0.65s cubic-bezier(0.075, 0.82, 0.165, 1);
+		animation: none;
+		
+		&.show {
+			top: 57px;
+		}
+	}
+
+	.menu-item {
+		width: 137px;
+		margin-right: 8%;
+		padding-right: 6px;
+		justify-content: flex-end;
+	}
+
+	.navbar-burger {
+		display: flex;
+	}
+
+	.navbar-brand {
+		animation: menu-brand-downsize cubic-bezier(0.075, 0.82, 0.165, 1) 0.65s;
+	}
+
+	.navbar-svg {
+		width: 36px;
+		height: 36px;
+	}
+
+	.overlay {
+		display: initial;
 		top: -100vh;
 		-webkit-transition: top 0.65s cubic-bezier(0.075, 0.82, 0.165, 1);
 		transition: top 0.65s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -69,54 +277,17 @@
 		font-size: 1.3rem;
 	}
 
-	.portrait-svg {
-		min-width: 250px;
-		max-width: 44%;
-	}
-
-	.outer-circle-svg {
-		transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-		transition-delay: 0.25s;
-		min-width: 0;
-		max-width: 0;
-
-		&.animation {
-			min-width: 250px;
-			max-width: 44%;
-		}
-	}
-
 	.smaller-circle-svg {
-		transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-		transition-delay: 0.25s;
-		min-width: 320px;
-		max-width: 55%;
-		
+		min-width: 300px;
+	
 		&.animation {
-			min-width: 250px;
 			max-width: 44%;
-		}
-	}
-
-	.portrait-svg {
-		opacity: 0;
-		transition: opacity 0.65s cubic-bezier(0.075, 0.82, 0.165, 1);
-
-		&.animation {
-			opacity: 1;
 		}
 	}
 
 	.shadow-svg {
-		opacity: 1;
-			transition: opacity 0.65s cubic-bezier(0.075, 0.82, 0.165, 1);
-			min-width: 250px;
-			max-width: 44%;
-			z-index: 10;
-
-			&.animation {
-				opacity: 0;
-			}
+		min-width: 250px;
+		max-width: 44%;
 	}
 
 	.section-skills-svg {
@@ -232,7 +403,8 @@
 
 	.section3 {
 		flex-direction: column;
-		height: 50vh;
+		height: auto;
+		padding-bottom: 1.5rem;
 	}
 
 	.section3-right {
@@ -276,6 +448,7 @@
 
 	.section1 {
 		flex-direction: row;
+		height: 100vh;
 	}
 
 	.section1-title {
@@ -287,65 +460,29 @@
 	}
 
 	.section1-content {
-		font-size: 0.8rem;
-	}
-
-	.portrait-svg {
-		min-width: 250px;
-		max-width: 44%;
-	}
-
-	.outer-circle-svg {
-		transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-		transition-delay: 0.25s;
-		min-width: 0;
-		max-width: 0;
-
-		&.animation {
-			min-width: 250px;
-			max-width: 44%;
-		}
-	}
-
-	.smaller-circle-svg {
-		transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-		transition-delay: 0.25s;
-		min-width: 500px;
-		max-width: 55%;
-		
-		&.animation {
-			min-width: 250px;
-			max-width: 45%;
-		}
-	}
-
-	.portrait-svg {
-		opacity: 0;
-		transition: opacity 0.65s cubic-bezier(0.075, 0.82, 0.165, 1);
-
-		&.animation {
-			opacity: 1;
-		}
-	}
-
-	.shadow-svg {
-		opacity: 1;
-			transition: opacity 0.65s cubic-bezier(0.075, 0.82, 0.165, 1);
-			max-width: 88%;
-			z-index: 10;
-
-			&.animation {
-				opacity: 0;
-			}
+		font-size: 0.7rem;
 	}
 
 	.section-skills-svg {
-		height: 80px;
+		height: 60px;
 	}
 
 	.footer {
 		min-height: 12rem;
 		height: 25vw;
+	}
+
+	.footer-title {
+		font-size: 2rem;
+	}
+
+	.footer-href {
+		font-size: 0.9rem;
+	}
+
+	.footer-svg {
+		width: 36px;
+		height: 36px;
 	}
 
 	
@@ -359,7 +496,7 @@
 
 	.carousel {
 		background-size: 100%;
-		background-position-y: 7vh;
+		background-position-y: -4vh;
 	}
 
 	.carousel-block {
@@ -390,7 +527,7 @@
 	}
 
 	.carousel-wrapper-text {
-		font-size: 0.8rem;
+		font-size: 0.7rem;
 	}
 
 	.carousel-link {
@@ -410,8 +547,17 @@
 		margin-bottom: 1rem;
 	}
 
+	.carousel-dots {
+		top: 93%;
+	}
+
+	.section-projects {
+		height: 101vh;
+	}
+
 	.section3 {
 		flex-direction: row;
+		height: 105vh;
 	} 
 
 	.section3-right {
@@ -427,7 +573,7 @@
 	}
 
 	.section3-text {
-		font-size: 0.8rem;
+		font-size: 0.7rem;
 		text-align: left;
 	}
 }
@@ -447,14 +593,6 @@
 	.navbar-svg {
 		width: 50px;
 		height: 50px;
-	}
-
-	.navbar-burger {
-		display: none;
-	}
-
-	.overlay {
-		display: none;
 	}
 
 	.banner-text {
@@ -481,53 +619,27 @@
 		font-size: 1rem;
 	}
 
-	 .portrait-svg {
-		min-width: 250px;
-		max-width: 35%;
-	}
-
 	.outer-circle-svg {
-		transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-		transition-delay: 0.25s;
-		min-width: 0;
-		max-width: 0;
 
 		&.animation {
-			min-width: 250px;
 			max-width: 35%;
 		}
 	}
 
 	.smaller-circle-svg {
-		transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-		transition-delay: 0.25s;
-		min-width: 500px;
 		max-width: 45%;
 		
 		&.animation {
-			min-width: 250px;
 			max-width: 35%;
 		}
 	}
 
 	.portrait-svg {
-		opacity: 0;
-		transition: opacity 0.65s cubic-bezier(0.075, 0.82, 0.165, 1);
-
-		&.animation {
-			opacity: 1;
-		}
+		max-width: 35%;
 	}
 
 	.shadow-svg {
-		opacity: 1;
-		transition: opacity 0.65s cubic-bezier(0.075, 0.82, 0.165, 1);
 		max-width: 70%;
-		z-index: 10;
-		
-		&.animation {
-			opacity: 0;
-		}
 	}
 
 	.footer {
@@ -542,57 +654,8 @@
 		}
 	}
 
-	.carousel {
-		background-size: 70vw;
-		background-position: top;
-	}
-
-	.carousel-block {
-		background: linear-gradient(0deg, rgba(30,30,30,1) 25%, rgba(30,30,30,0.1) 50%);
-	}
-
-	.carousel-space {
-		flex-basis: 60%;
-	}
-
-	.carousel-wrapper {
-		flex-basis: 40%;
-		padding: 5%;
-		margin-top: -8rem;
-	}
-
-	.carousel-wrapper-date {
-		font-size: 1rem;
-	}
-
-	.carousel-wrapper-title {
-		font-size: 2rem;
-	}
-
-	.carousel-wrapper-info {
-		font-size: 1.2rem;
-	
-	}
-
-	.carousel-wrapper-text {
-		font-size: 1rem;
-	}
-
-	.carousel-link-github {
-		margin-top: 5vh;
-	}
-
-	.carousel-link-website {
-		margin-top: 1.5rem;
-	}
-
-	.carousel-href {
-		font-size: 1.2rem;
-	}
-
-	.carousel-svg, .carousel-website-svg {
-		width: 36px;
-		height: 36px;
+	.section-skills-svg {
+		height: 100px;
 	}
 
 	.section3 {
